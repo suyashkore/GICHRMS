@@ -14,6 +14,25 @@ function app_init_admin_sidebar_menu_items()
         'badge'    => [],
     ]);
 
+    if (has_permission('hrp_attendance', '', 'view') || has_permission('hrp_attendance', '', 'view_own')) {
+        $CI->app_menu->add_sidebar_menu_item('hr_payroll', [
+            'collapse' => true,
+            'name'     => _l('hr_payroll'),
+            'href'     => admin_url('hr_payroll/manage_attendance'),
+            'position' => 20,
+            'icon'     => 'fa fa-users',
+            'badge'    => [],
+        ]);
+
+        $CI->app_menu->add_sidebar_children_item('hr_payroll', [
+            'slug'     => 'hr_manage_attendance',
+            'name'     => _l('hr_manage_attendance'),
+            'href'     => admin_url('hr_payroll/manage_attendance'),
+            'position' => 1,
+            'badge'    => [],
+        ]);
+    }
+
     if (
         staff_can('view',  'customers')
         || (have_assigned_customers()
