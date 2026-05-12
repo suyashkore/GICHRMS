@@ -617,8 +617,8 @@ class Dashboard_model extends App_Model
                 ];
             }
 
-            if (isset($attendance['total_work_minutes']) && $attendance['total_work_minutes'] == 0 && ! empty($attendance['attendance_status']) && ! empty($attendance['punch_in_time'])) {
-                // calculate time from punch in HH:mm
+            if (! empty($attendance['punch_in_time']) && empty($attendance['punch_out_time'])) {
+                // live runtime calculation while punch-out is pending
                 $punchInTime = strtotime($attendance['punch_in_time']);
                 if ($punchInTime !== false) {
                     $currentTime = time();
@@ -640,6 +640,18 @@ class Dashboard_model extends App_Model
             } else {
                 $attendance['total_work_minutes'] = '-';
             }
+
+            $today = date('Y-m-d');
+            $attendanceStatus = $attendance['attendance_status'] ?? null;
+            if (empty($attendanceStatus) && ! empty($attendance['punch_in_time']) && empty($attendance['punch_out_time'])) {
+                $attendanceStatus = 'present';
+            }
+            if (empty($attendanceStatus) && $selectedDate > $today) {
+                $attendanceStatus = 'upcoming';
+            } elseif (empty($attendanceStatus)) {
+                $attendanceStatus = 'absent';
+            }
+
             return [
                 'status' => true,
                 'message' => 'Day status fetched successfully.',
@@ -648,9 +660,9 @@ class Dashboard_model extends App_Model
                     'staff_id' => $staff_id,
                     'date' => $selectedDate,
                     'display_date' => date('D, d M Y', strtotime($selectedDate)),
-                    'attendance_status' => $attendance['attendance_status'] ?? 'absent',
-                    'punch_in_time' => (!empty($attendance['punch_in_time']) ? date('H:i:s', strtotime($attendance['punch_in_time'])) : '-'),
-                    'punch_out_time' => (!empty($attendance['punch_out_time']) ? date('H:i:s', strtotime($attendance['punch_out_time'])) : '-'),
+                    'attendance_status' => $attendanceStatus,
+                    'punch_in_time' => (!empty($attendance['punch_in_time']) ? date('d M Y h:i A', strtotime($attendance['punch_in_time'])) : '-'),
+                    'punch_out_time' => (!empty($attendance['punch_out_time']) ? date('d M Y h:i A', strtotime($attendance['punch_out_time'])) : '-'),
                     'total_work_minutes' => $attendance['total_work_minutes'] ?? '-',
                     // 'is_break_active' => !empty($activeBreak),
                     // 'attendance_status' => $attendance['attendance_status'] ?? null,

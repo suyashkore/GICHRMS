@@ -705,6 +705,7 @@ class hr_payroll extends AdminController {
 		hr_payroll_init();
 		$this->load->model('staff_model');
 		$this->load->model('departments_model');
+		$this->load->model('roles_model');
 
 		$rel_type = hrp_get_hr_profile_status();
 
