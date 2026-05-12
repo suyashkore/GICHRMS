@@ -1,0 +1,83 @@
+<string name="select_party" translatable="false">Select Party</string>
+    <string name="party_name" translatable="false">Party Name</string>
+    <string name="party_mobile" translatable="false">Party Mobile</string>
+    <string name="party_address" translatable="false">Party Address</string>
+    <string name="commodity_bookings" translatable="false">Commodity Bookings</string>
+    <string name="commodity_centers" translatable="false">Commodity Centers</string>
+    <string name="commodity_rates" translatable="false">Commodity Rates</string>
+
+    <string name="board_resolution_letter" translatable="false">Board resolution letter</string>
+    <string name="pan2" translatable="false">PAN</string>
+    <string name="aadhaar_photo" translatable="false">Aadhaar Card Photo</string>
+    <string name="upload_aadhaar_front" translatable="false">Upload aadhaar front side here</string>
+    <string name="upload_aadhaar_back" translatable="false">Upload aadhaar back side here</string>
+    <string name="farm_details" translatable="false">Farm Details</string>
+    <string name="farm_name2" translatable="false">Farm Name</string>
+    <string name="area" translatable="false">Area</string>
+    <string name="survey_number" translatable="false">Survey Number</string>
+    <string name="my_orders" translatable="false">My Orders</string>
+    <string name="sell_orders" translatable="false">Sell Orders</string>
+    <string name="search" translatable="false">Search</string>
+    <string name="my_farms" translatable="false">My Farms</string>
+    <string name="sell_order_details" translatable="false">Sell Order Details</string>
+    <string name="withdraw_order_details" translatable="false">Withdraw Order Details</string>
+    <string name="booking_id" translatable="false">Booking ID</string>
+    <string name="commodity_name" translatable="false">Commodity</string>
+    <string name="center_name" translatable="false">Center Name</string>
+    <string name="gate_in_id" translatable="false">Gate-In ID</string>
+    <string name="sold_qty_qtl" translatable="false">Sold Qty (Qtl)</string>
+    <string name="deposit_qty_qtl" translatable="false">Deposit Qty (Qtl)</string>
+    <string name="withdraw_qty_qtl" translatable="false">W/D Qty (Qtl)</string>
+    <string name="date" translatable="false">Date</string>
+    <string name="status" translatable="false">Status</string>
+    <string name="sell_commodity" translatable="false">Sell Commodity</string>
+    <string name="generate_asn" translatable="false">Generate ASN</string>
+    <string name="vehicle_no" translatable="false">Vehicle No</string>
+    <string name="driver_mobile_no" translatable="false">Driver\'s Mobile No</string>
+    <string name="vehicle_photo" translatable="false">Vehicle Photo</string>
+    <string name="driver_photo" translatable="false">Driver Photo</string>
+    <string name="wh_booking_details" translatable="false">Warehouse Booking Details</string>
+    <string name="warehouse" translatable="false">Warehouse</string>
+    <string name="warehouse_bookings" translatable="false">Warehouse Bookings</string>
+    <string name="select_booking_id" translatable="false">Select Booking ID</string>
+    <string name="withdraw_commodity" translatable="false">Withdraw Commodity</string>
+    <string name="withdraw_qty_short" translatable="false">W/D Qty</string>
+    <string name="total_qty_short" translatable="false">Total Qty</string>
+    <string name="available_qty" translatable="false">Available Qty</string>
+    <string name="withdraw_date" translatable="false">Withdraw Date</string>
+    <string name="stack" translatable="false">Stack</string>
+    <string name="lot" translatable="false">Lot</string>
+    <string name="total_area2" translatable="false">Total Area</string>
+    <string name="sell_order_no" translatable="false">Sell Order No</string>
+    <string name="order_date" translatable="false">Order Date</string>
+    <string name="pay_now" translatable="false">Pay Now</string>
+    <string name="pay_later" translatable="false">Pay Later</string>
+    <string name="payment_date" translatable="false">Payment Date</string>
+    <string name="remark" translatable="false">Remark</string>
+
+
+    <string name="continue_" translatable="false">Continue</string>
+    <string name="profile" translatable="false">My Profile</string>
+    <string name="logout" translatable="false">Logout</string>
+    <string name="kyc_status" translatable="false">KYC Status</string>
+    <string name="update_kyc" translatable="false"><u><font color="#FF03DAC5">Update KYC</font></u></string>
+    <string name="incomplete" translatable="false">Incomplete</string>
+    <string name="complete" translatable="false">Complete</string>
+    <string name="primary_gst" translatable="false">Primary GST</string>
+    <string name="update" translatable="false">Update</string>
+
+    <string name="digit1" translatable="false">Enter first digit of OTP</string>
+    <string name="digit2" translatable="false">Enter second digit of OTP</string>
+    <string name="digit3" translatable="false">Enter third digit of OTP</string>
+    <string name="digit4" translatable="false">Enter fourth digit of OTP</string>
+
+    <string name="news" translatable="false">News</string>
+
+    <string name="location_settings" translatable="false">Location required! Please enable in settings.</string>
+    <string name="location_permission" translatable="false">Location Permission required! Please allow in settings.</string>
+
+
+    <string name="t_and_c" translatable="false">Terms &amp; Conditions</string>
+    <string name="contract_notes" translatable="false">Contract Notes</string>
+
+    <string name="updated_qty" translatable="false">Updated Quantity</string>

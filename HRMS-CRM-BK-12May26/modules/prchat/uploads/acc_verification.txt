@@ -1,0 +1,35 @@
+{
+  "data": {
+    "client_id": "bank_validation_xqwzgOZipclIwitDrgFf",
+    "account_exists": true,
+    "upi_id": null,
+    "full_name": "SHINDE MADHAV PANDURANG",
+    "remarks": "",
+    "ifsc_details": {
+      "id": 0,
+      "ifsc": "KKBK0000726",
+      "micr": "411485005",
+      "iso3166": "IN-MH",
+      "swift": null,
+      "bank": "Kotak Mahindra Bank",
+      "bank_code": "KKBK",
+      "bank_name": "Kotak Mahindra Bank",
+      "branch": "PUNE - AUNDH",
+      "centre": "PUNE",
+      "district": "PUNE",
+      "state": "MAHARASHTRA",
+      "city": "PUNE",
+      "address": "PUNE - AUNDH",
+      "contact": "66408210",
+      "imps": true,
+      "rtgs": true,
+      "neft": true,
+      "upi": true,
+      "micr_check": true
+    }
+  },
+  "status_code": 200,
+  "success": true,
+  "message": null,
+  "message_code": "success"
+}

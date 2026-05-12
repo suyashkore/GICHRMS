@@ -1,0 +1,133 @@
+ERP Modules
+
+-Purchase
+-Sales
+-Account
+-HR
+-Reporting
+-Production
+
+Purchase(Basic)
+-Vendors
+-PO Create, Request
+
+Advance
+-Debit Note
+
+Sales(Basic)
+-Sale Order
+-Challan
+-Gate Pass
+-Discount
+-Rate
+-Listing
+
+Advance
+-EInvoicing
+-Multiple Challan
+-Schemes
+
+Accounting(Basic)
+-Vouchers
+-Contra
+-Journal
+-Payment
+-Receipt
+-Trial Balance
+-Account Monitor
+
+Advance
+-Accounts Audit Log
+
+HR(Basic)
+-Staff Management
+-Shifts
+-Department
+-Attendance
+
+Advance
+-Reports
+
+Reporting(Basic)
+-Sales
+-Stock
+-Basic
+
+Production(Basic)
+-Production Order
+-Purchase Scheduling
+-Purchase Request
+
+Advance
+-Cost Report
+
+Inventory
+
+BOM
+-Machine parts / Spare parts
+-Purchase Quotation
+
+QC
+
+Statistics
+
+5000+ Doctors across the platform
+10Lakh+ Patients Overall
+1000Crores+ Invoices
+50000+ Employee Handling
+
+Dashboard Design for ERP
+-Realtime Updates
+-Intiutive / Decision Making
+-AI based recommendations, Estimates
+-Tasks / Actions
+-Interlinking
+
+Sidebar Menus
+-Store / Raw material
+-Purchase
+-Inventory
+-Production
+-Sales
+-Accounts
+-HR
+
+Dashboard View
+-Total Sales(Amt), Total Orders(Qty), Pending Invoices(Amt in Red)
+
+-Steps for process(Manufacturing)
+-Raw Material -> Semi Finished Good -> Finished Good ->  Consumable Product -> Scrap
+
+-Sales
+-Invoices Received
+-Returns
+
+Vendor Management
+-Purchase Requirement -> Quotation
+
+Key Performance Indicators(KPI)
+-Income Vs Expense Graph Monthwise, Yearwise
+-Profit & Loss Graph
+-Orders 
+Refer POS Software
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

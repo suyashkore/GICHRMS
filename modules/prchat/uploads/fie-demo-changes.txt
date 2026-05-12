@@ -1,0 +1,169 @@
+URL : https://fie.globalinfocloud.com/demo/admin/AccountMaster/VendorAddEdit
+View File : AccountMaster/VendorNew.php
+Change :
+function myFunction2() {
+		var input, filter, table, tr, td, i, txtValue;
+		input = document.getElementById("myInput1");
+		filter = input.value.toUpperCase();
+		table = document.getElementById("table_Account_List");
+		tr = table.getElementsByTagName("tr");
+		for (i = 1; i < tr.length; i++) {
+			td = tr[i].getElementsByTagName("td")[0];
+			td1 = tr[i].getElementsByTagName("td")[1];
+			td2 = tr[i].getElementsByTagName("td")[2];
+			td3 = tr[i].getElementsByTagName("td")[3];
+			if (td) {
+				txtValue = td.textContent || td.innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					tr[i].style.display = "";
+					} else if(td1){
+					txtValue = td1.textContent || td1.innerText;
+					if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						tr[i].style.display = "";
+						} else if(td2){
+						txtValue = td2.textContent || td2.innerText;
+						if (txtValue.toUpperCase().indexOf(filter) > -1) {
+							tr[i].style.display = "";
+							}else if(td3){
+							txtValue = td3.textContent || td3.innerText;
+							if (txtValue.toUpperCase().indexOf(filter) > -1) {
+								tr[i].style.display = "";
+								}else{
+									tr[i].style.display = "none";
+								} 
+					    	}
+					    }
+				    }     
+			    }
+	    	}
+	}
+
+
+URL : https://fie.globalinfocloud.com/demo/admin/AccountMaster
+View File : AccountMaster/manageNew.php
+Change :
+
+	function myFunction2() {
+		var input, filter, table, tr, td, i, txtValue;
+		input = document.getElementById("myInput1");
+		filter = input.value.toUpperCase();
+		table = document.getElementById("table_Account_List");
+		tr = table.getElementsByTagName("tr");
+		for (i = 1; i < tr.length; i++) {
+			td = tr[i].getElementsByTagName("td")[0];
+			td1 = tr[i].getElementsByTagName("td")[1];
+			td2 = tr[i].getElementsByTagName("td")[2];
+			td3 = tr[i].getElementsByTagName("td")[3];
+			//td4 = tr[i].getElementsByTagName("td")[4];
+			if (td) {
+				txtValue = td.textContent || td.innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					tr[i].style.display = "";
+					} else if(td1){
+					txtValue = td1.textContent || td1.innerText;
+					if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						tr[i].style.display = "";
+						} else if(td2){
+						txtValue = td2.textContent || td2.innerText;
+						if (txtValue.toUpperCase().indexOf(filter) > -1) {
+							tr[i].style.display = "";
+							}else if(td3){
+							txtValue = td3.textContent || td3.innerText;
+							if (txtValue.toUpperCase().indexOf(filter) > -1) {
+								tr[i].style.display = "";
+								}else{
+									tr[i].style.display = "none";
+								} 
+					    	}
+		    			}
+		    		}     
+			    }
+	    	}
+	}
+
+URL : https://fie.globalinfocloud.com/demo/admin/production/view_production_list
+View File : production/production_list.php
+Change :
+	function myFunction2() {
+		var input, filter, table, tr, td, i, txtValue;
+		input = document.getElementById("myInput1");
+		filter = input.value.toUpperCase();
+		table = document.getElementById("table-daily_report");
+		tr = table.getElementsByTagName("tr");
+		for (i = 1; i < tr.length; i++) {
+			td = tr[i].getElementsByTagName("td")[0];
+			td1 = tr[i].getElementsByTagName("td")[1];
+			td2 = tr[i].getElementsByTagName("td")[2];
+			td3 = tr[i].getElementsByTagName("td")[3];
+			if (td) {
+				txtValue = td.textContent || td.innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					tr[i].style.display = "";
+					} else if(td1){
+					txtValue = td1.textContent || td1.innerText;
+					if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						tr[i].style.display = "";
+						} else if(td2){
+						txtValue = td2.textContent || td2.innerText;
+						if (txtValue.toUpperCase().indexOf(filter) > -1) {
+							tr[i].style.display = "";
+							}else if(td3){
+							txtValue = td3.textContent || td3.innerText;
+							if (txtValue.toUpperCase().indexOf(filter) > -1) {
+								tr[i].style.display = "";
+								}else{
+										tr[i].style.display = "none";
+									} 
+					       	}
+					    }     
+			    	}
+			    }
+	    	}
+	}
+
+URL : https://fie.globalinfocloud.com/demo/admin/production/ConversionList
+View File : production/ConversionList.php
+Change :
+	function myFunction2() {
+		var input, filter, table, tr, td, i, txtValue;
+		input = document.getElementById("myInput1");
+		filter = input.value.toUpperCase();
+		table = document.getElementById("table-daily_report");
+		tr = table.getElementsByTagName("tr");
+		for (i = 1; i < tr.length; i++) {
+			td = tr[i].getElementsByTagName("td")[0];
+			td1 = tr[i].getElementsByTagName("td")[1];
+			td2 = tr[i].getElementsByTagName("td")[2];
+			td3 = tr[i].getElementsByTagName("td")[3];
+			td4 = tr[i].getElementsByTagName("td")[4];
+			if (td) {
+				txtValue = td.textContent || td.innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					tr[i].style.display = "";
+					} else if(td1){
+					txtValue = td1.textContent || td1.innerText;
+					if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						tr[i].style.display = "";
+						} else if(td2){
+						txtValue = td2.textContent || td2.innerText;
+						if (txtValue.toUpperCase().indexOf(filter) > -1) {
+							tr[i].style.display = "";
+							}else if(td3){
+							txtValue = td3.textContent || td3.innerText;
+							if (txtValue.toUpperCase().indexOf(filter) > -1) {
+								tr[i].style.display = "";
+								}else if(td4){
+								txtValue = td4.textContent || td4.innerText;
+								if (txtValue.toUpperCase().indexOf(filter) > -1) {
+									tr[i].style.display = "";
+									
+									}else{
+										tr[i].style.display = "none";
+									} 
+							}
+						}
+					}     
+				}
+			}
+		}
+	}

@@ -1,0 +1,278 @@
+Battery Sprayers - 
+	1.ELECTRIC
+	2.ELECTRIC1
+	3.SURAJ 2IN1
+	4.SURAJ 2IN1 l
+	5.DOUBLE BULL PORTABLE
+	6.HERBITECH
+	7.SUZO BATTERY SPRAYER 2 LTR
+	8.ANGELO BATTERY SPRAYER 5 LTR
+
+Engine Operated Sprayers - 
+	9.SHAKTI 2ST
+	10.SHAKTI 4ST NEW
+	11.SHAKTI 4ST
+	12.Portable Shakti 2st
+	13.Portable Shakti 4st
+	14.Trolley Shakti 2st 50-litre
+	18.Remote Htp Sprayer 2-hp
+	21.Htp Sprayer Set 5hp+50-htp
+	23.Htp Sprayer Set 5hp+30-htp With Reel Stand & Wheel
+	24.Htp Sprayer Set 5hp+50-htp With Reel Stand & Wheel
+	25.350-litre Tractor Sprayer
+	26.160-litre Sprayer 5-hp
+
+Machineries - 
+	27.Trolley Power Weeder Cum Tiller 2st
+	28.Weeder Machine 2-hp Petrol
+	29.Weeder Machine 4.5-hp Petrol
+	30.Weeder Machine 7hp Chikalni Karita
+	31.Weeder Machine 9hp
+	32.Tiller Machine 2-st 68cc
+	33.Grass Cutter Machine
+	34.Lawn Mower Manual 14"
+	35.Chain Saw Machine
+	36.Tea leaf cutter
+	37.BOSCH ISIO 2 SHRUB TRIMMER
+	38.BOSCH AHS 48 Li TRIMMER
+	39.BOSCH AQUATECH 100 PLUS
+	40.BOSCH ALS-25, 250-WATT GARDEN VACUUM
+	41.BOSCH AQUATECH 1200 PLUS
+	42.BOSCH GHT 5-13 C
+	43.Earth Auger Automatic 2-st 68cc
+	44.Earth Auger Manual 2-st 52cc
+	45.Seed Cleaning Machine
+	46.Anand Separator
+	47.Paddy Thresher
+	48.Rice Mill Cottage
+	49.Rice Mill Mini Single Pass
+	50.Rice Mill Multipurpose
+	51.Rice Mill Mobile (ss)
+	52.Rice Mill Brown Rice
+	53.Kadba Cutter Mini 2hp 1-phase
+	54.Kadba Cutter Mini 2hp 1-phase
+	55.Kadba Cutter 2-hp
+	56.Kadba Cutter 15-hp Tractor Cum Motor Operated
+	57.Kadba Cutter Heavy Duty R/F 2hp
+	58.1-hp Flour Mill
+	60.1.5-hp Heavy Duty Mixer Grinder
+	61.2-hp Creta 2in1 Pulveriser
+	62.3-hp Super Power 2in1 Pulveriser
+	63.1-hp Gravy Machine
+	64.5-kg Flour Mixing Machine
+	65.Pellet Machine 5-hp
+	67.Crusher 15hp (Brown & Blue)
+	68.Mini Corn Thresher
+	69.Corn Thresher
+	70.Double Corn Thresher
+	71.Cotton Picking Machine
+	72.Pulveriser 3-hp Ss
+	73.Pulveriser 4-hp Ss
+	74.Pushpak Thresher Super 15 HP
+	75.Pushpak Thresher Super 25 HP
+	76.Mini Fogging Machine Water Base
+	77.Thermal Fogging Machine (ss)
+	79.Mulching Paper 25 micron -1 meter x 400 meter
+
+Equipment - 
+	80.Mulching Paper
+	81.Planter SS
+	82.Moisture Meter
+	83.Funnel Trap
+	84.Pheromone Lures Pink Bollwarm
+	85.Glue Trap Pad (10/pcs)
+	86.Trimmer Plate
+	87.Boom Lance -16' (Fiber)
+	88.Goggle Hard
+	89.Motor With Diaphragm
+	90.Mobile Charger
+	91.Domestic Led Bulb
+	92.Led Bulb 5-watt
+	93.Head Torch Lamp
+	94.Solar Home Light System 2.5-watt
+	95.Solar Home Light System 5-watt
+	96.Solar Fencing System
+	97.Plant Trimmer
+	98.Rain Gun
+	99.Drip Pipe
+	100.Rain Hose
+	101.Blower Spray Gun
+	102.Battery Blower Gun
+	103.Tornado Spray Gun (Big)
+
+Sunya-Heavy-Duty-Garden-Tools - 
+	104.Premium Ceramic Gun S.S. RS. 1780
+	105.Premium Ceramic Gun S.S RS. 2100
+	106.Premium Ceramic Gun Brass RS. 1850
+ 	107.Premium Flower Ceramic Gun S.S. RS. 2100
+	108.Premium Turbo Ceramic Gun
+	109.Premium Turbo Ceramic Gun
+	110.Premium Apple Master Gun S.S. RS.1900
+	111.Premium Apple Master Gun Brass RS.1900
+	112.Premium Apple Master Gun Brass RS.2500
+	113.Premium Apple Master Gun S.S. Bend
+	114.Premium Apple Master Heavy Gun S.S RS.2050
+	115.Premium Apple Master Heavy Gun Brass
+ 	116.Premium Flower Apple Master Heavy Gun S.S RS.2000
+	117.Premium High Jet Gun Brass RS.2800
+	118.Premium High Jet Gun S.S.
+	119.Premium Flower High Jet Gun S.S
+	120.Premium Heavy High Jet Gun Brass RS.3600
+	121.Premium Heavy High Jet Gun Brass RS.4200
+	122.Premium Heavy High Jet Gun Brass RS.4200
+	123.Premium Heavy High Jet Gun Brass RS.3600
+	124.Premium Flower Heavy Jet Gun S.S
+ 	125.Premium Power Sprayer Gun S.S 300 mm
+	126.Premium Power Sprayer Gun S.S 600 mm
+	127.Premium Power Sprayer Gun Brass Rs.2000
+	128.Premium Power Sprayer Gun Brass Rs.1400
+	129.Premium Adjustable Brass Nozzle rs.4200
+	130.Premium Adjustable Brass Nozzle rs.3500
+	131.Premium Adjustable Brass Nozzle
+ 	132.Premium Ceramic Nozzle
+	133.Premium Ceramic Nozzle With Nut Nipple
+	134.Premium Ceramic Gun
+	135.Premium Atr Gun Albuz
+	136.Premium Pdn Gun
+	137.Premium Atr Nozzle Single Albuz
+	138.Premium Atr Straight Nozzle Albuz
+	139.Premium Atr Nozzle Double Arag
+	140.Premium Atr Nozzle Single Arag
+	141.Premium Atr Straight Nozzle Arag
+	142.Premium Atr Nozzle Double Brass Albuz
+	143.Premium Atr Nozzle Single Brass Albuz
+	144.Premium Pdn Nozzle Single
+	145.Premium Pdn Straight Nozzle
+	146.Premium Atr Nozzle Double Body
+	147.Premium Atr Nozzle Single Body
+	148.Premium Atr Nozzle Double Brass Body
+	149.Premium Twister Heavy
+	150.Premium Brass 3 pcs Nipple
+	151.Premium Suction & Bypass Hose With Strainer
+	152.Premium Suction Bypass Hose
+	153.Premium Suction Strainer
+	154.Premium Blower Ss Bend Pipe 4 N
+	155.Premium Blower Ss Straight Pipe 5 N
+	156.Premium Blower Ss Straight Pipe 4 N
+	157.Premium Blower Ss Bend Pipe 5 N
+	158.Premium Blower S.S 4 Way
+	159.Premium Power Sprayer Lance 1 N
+	160.Premium Power Sprayer Lance 2 N
+	161.Premium Power Sprayer Boom Lance 3 N
+	162.Premium Power Sprayer Boom Lance 3 N
+	163.Premium Power Sprayer Boom Lance 4 N
+	164.Premium Power Sprayer Boom Lance 5 N
+	165.Premium Power Sprayer Boom Lance 6 N
+	166.Premium Power Sprayer Boom Lance Red Cap 2 N
+	167.Premium Boom Lance 3n Set
+	168.Premium Boom Lance 5n Set
+	169.Premium Boom Lance 7n Set
+	170.Premium Boom Lance 8 N Set With Delivery
+	171.Premium Boom Lance 2 N Set
+	172.Premium Htp1/2'' Boom Lance 8 N
+	173.Premium Lance Ss 1/2'' Straight 24''
+	174.Premium Htp1/2'' Boom Lance 3 N
+	175.Premium Lance Ss 1/2'' Bend 24''
+	176.Premium Battery Sprayer Lance S.S
+	177.Premium Battery Sprayer Folding Lance S.S
+	178.Premium Battery Sprayer Boom Lance S.S 3N
+	179.Premium High Tech Sprayer Lance S.S
+	180.Premium High Tech Sprayer Folding Lance S.S
+	181.Premium High Tech Sprayer Boom Lance S.S 3 N
+	182.Premium Boom Lance Ss Folding 3 Way
+	183.Premium Boom Lance Ss Folding 3 Way
+	184.Premium Power Sprayer Ss Lance 5 N
+	185.Premium Square Lance Ss 3 Nozzle Set
+	186.Premium Plastic Bcn Nozzle 3.4.5.6
+	187.Premium Plastic Bcn Nozzle Bend 3.4.5.6
+	188.Premium Plastic Bcn Nozzle 7.8.9
+	189.Premium Plastic Bcn Nozzle Bend 7.8.9
+	190.Premium Battery Sprayer Lance Plastic Bend
+	191.Premium Red Cap Adjustable Brass Nozzle
+	192.Premium Red Cap Brass Nozzle
+	193.Premium 3 Way Brass Nozzle
+	194.Premium Adjustable Brass Nozzle Heavy
+	195.Premium Bcn Brass Nozzle 3.4
+	196.Premium Bcn Brass Nozzle 3.4.5.6
+	197.Premium NMB Brass Nozzle Heavy
+	198.Premium Pvc Washer P-6
+	199.Premium Power Sprayer Delivery Pipe
+	200.Premium Battery Sprayer Delivery Pipe
+	201.Premium High Tech Sprayer Trigger Delivery Pipe
+	202.Premium Brass Joint Nipple L X R
+	203.PADCORP 125013 - SUNYA 27" GEAR BYPASS LOPPER
+	204.PADCORP 125018 - SUNYA 27" GEAR BYPASS LOPPER
+	205.PADCORP 105013 - SUNYA 27" GEAR ANVIL LOPPER
+	206.PADCORP 105018 - SUNYA 27" GEAR ANVIL LOPPER
+	207.PADCORP 115023 - SUNYA 21" MINI GEAR ANVIL LOPPER
+	208.PADCORP 125023 - SUNYA 21" MINI GEAR BYPASS LOPPER
+	209.PADCORP 120003/3203 - SUNYA CLASSIC BYPASS LOPPER HC1085C 
+	210.PADCORP 100003 - SUNYA HOOK ANVIL LOPPER
+	211.PADCORP 128018 - SUNYA DROP FORGED BYPASS LOPPER
+	212.PADCORP 120013 - SUNYA BYPASS LOPPER
+	213.PADCORP 12501H - SUNYA GEAR BYPASS TELESCOPIC LOPPER PADCORP 12701H - SUNYA PLANET PADCORP 12701H - SUNYA PLANET 270 REVI
+	214.PADCORP 12701H - SUNYA PLANET GEAR BYPASS TELESCOPIC LOPPER
+	215.PADCORP 3303 - SUNYA STRAIGHT HEDGE SHEARS
+	216.PADCORP 231003 - 24" WAVY HEDGE SHEARS
+	217.PADCORP 23002E WAVY TELESCOPIC HEDGE SHEARS
+	218.PADCORP 23100 H WAVY TELESCOPIC HEDGE SHEARS
+	219.PADCORP 41101Z - GRASS SHEAR 90 Degree rotatable grass shear
+	220.PADCORP 200133-SUNYA LONG HANDLE LAWN HEDGING SHEARS
+	221.PADCORP 32003Z BYPASS PRUNER
+	222.PADCORP 320139/22389 BYPASS PRUNER
+	223.PADCORP 32010B/3828 SUNYA BYPASS PRUNER
+	224.PADCORP 13101Z ANVIL PRUNER
+	225.PADCORP 3860 DROP FORGED BYPASS PRUNERANVIL PRUNER
+	226.PADCORP 33003Z-1 7 1/2" STAINLESS STEEL BLADE SNIPS
+	227.PADCORP 33004Z-1 STAINLESS CURVED FRUIT SNIPS
+	228.PADCORP Curved Saw With 3-Edge Grinding Teeth
+	229.PADCORP Folding Saw With 3-Edge Grinding Teeth
+	230.PADCORP Pruning Saw With Hook (Available With Telescopic Pole)
+	231.PADCORP 26102K2 - PRUNING SAW
+	232.PADCORP 31019 - MACHETE WITH TOP SAW
+	233.PADCORP 680029 - MACHETE WITH TOP SAW
+	234.PADCORP 50507-SUNYA CULTIVATING TOOL : TROWEL, 51507-SUNYA CULTIVATING TOOL : TRANSPLANTER , 52507-SUNYA CULTIVATING TOOL 		: CULTIVATOR 
+	235.PADCORP 13131Z GRAFTING TOOL
+	236.PADCORP 670026 Folding Grafting knife
+	237.PADCORP 670016 - Folding Grafting knife
+	238.PADCORP 68009 - Sharpener
+	239.PADCORP Telescopic Cut And Hold Pruner
+	240.PADCORP 2812 Gear Bypass Tree Pruner with Saw (Fibre Pole )
+	241.PADCORP 50501C - Gear Anvil Tree Pruner with Saw (Fibre Pole )
+
+Economy-Garden-Guns-and-Lances - 
+	242.Prunning Secateur (Major)
+	243.Prunning Secateur (Deluxe)
+	244.Hedge Shear-10"(Wooden Handle)
+	245.Khurpa 1"
+	246.Khurpa 3 "
+	247.Folding Saw (wooden Handle)
+	248.Hedge Shear (P.V.C. Handel)
+	249.HEDGE SHEAR (PIPE HANDLE)
+	250.Trovel (Pvc)
+	251.Cultivator Panjaa 3-teeth
+	252.Hand Weeder
+	253.6"-Washing Gun
+	254.1' Sada Gun
+	255.1'-Brass Head Gun
+	256.1'-Black Gun
+	257.1'.6''-Black Gun
+	258.3' FT BEND GUN
+	259.4-feet Brass Head Gun
+	260.4-feet Brass Head Bend Gun
+	261.2 Feet 3- Way Lance (ss)
+	262.5-way Lance
+	263.T-Lance 6-nozzles (ss)
+	264.40
+	265.A - 1 Nozzle 4.6 "
+	266.B - 2 Nozzle 7 "
+	267.C - 2 Nozzle 11 "
+	268.D - 2 Nozzle 12 "
+	269.E - 3 Nozzle 8 "
+	270.G - 3 Nozzle 5"x 4 "
+	271.F - 4 Nozzle 4”x 3 "
+	272.G - 5 Nozzle 5"x 4 "
+
+
+
+

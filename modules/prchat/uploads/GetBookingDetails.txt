@@ -1,0 +1,980 @@
+{
+    "status": true,
+    "message": "Booking Details Updated",
+    "Booking": {
+        "id": "264",
+        "PlantID": "1",
+        "FY": "23",
+        "PartyID": "KASPL",
+        "BookingID": "KHAMGAOS071123001",
+        "AccountID": "7972292389",
+        "GodownID": "KHAMGAOW",
+        "CenterID": "KHAMGAO",
+        "ChamberID": "",
+        "StackID": "",
+        "LOTID": "",
+        "TType": "P",
+        "TType2": "Purchase",
+        "ASNID": "ASNKHAMGAO0711230001",
+        "ASNQR": "41534e4b48414d47414f30373131323330303031.png",
+        "asn_by": "GIC",
+        "asn_date": "2023-11-07 13:13:16.000000",
+        "Gate_in_ID": "GKHAMGAO0711230001",
+        "gate_in_date": "2023-11-07 13:14:24.000000",
+        "gate_in_by": "GIC",
+        "ItemID": "SO",
+        "quantity": "20",
+        "Asn_WT_MT": "2.00",
+        "PartyInvoice": null,
+        "unit": "MT",
+        "basic_rate": "4960.00",
+        "final_rate": null,
+        "QR": "474b48414d47414f30373131323330303031.png",
+        "VehicleNo": "MH32ER87590",
+        "VehicleImg": "V-KHAMGAOS071123001",
+        "DriverImg": "D-KHAMGAOS071123001",
+        "Phone": "9875456333",
+        "LoadedWeight": "22",
+        "VhlTopImage": "assets/Upload_doc/KHAMGAOS071123001/VhlTopImage.png",
+        "VhlFrontImage": "assets/Upload_doc/KHAMGAOS071123001/VhlFrontImage.png",
+        "VHLSideImage": "assets/Upload_doc/KHAMGAOS071123001/VHLSideImage.png",
+        "LWUserID": "7",
+        "LWTransDate": "2023-11-07 13:16:10.000000",
+        "no_of_layers": "54",
+        "FMQty": null,
+        "FMUserID": null,
+        "FMTransDate": null,
+        "TareWeight": null,
+        "TWVhlTopImage": null,
+        "TWVhlFrontImage": null,
+        "TWVHLSideImage": null,
+        "TWUserID": null,
+        "TWTransDate": null,
+        "FinalQCSlip": null,
+        "QCApprove": "N",
+        "payment_done": "0",
+        "payment_approved_date": null,
+        "payment_approved_by": null,
+        "gate_out_date": null,
+        "gate_out_by": null,
+        "exit_date": null,
+        "exit_by": null,
+        "reasonAmt": null,
+        "modify_reason": null,
+        "modifyFlag": "N",
+        "status": "6",
+        "IsCD": "N",
+        "IsPayment": "N",
+        "IsQcUpdate": "N",
+        "IsHoUpdate": "N",
+        "PaymentPer": null,
+        "PaymentAmt": null,
+        "ItemName": "SOYBEAN (10:02:02)",
+        "total_bags": "790",
+        "total_katta": "760",
+        "bags_collection_by_customer": "0",
+        "Qcparameterlist": [
+            {
+                "id": "1",
+                "ItemID": "SO",
+                "ItemParameterID": "1",
+                "MinValue": "10.00",
+                "BaseValue": "10.00",
+                "MaxValue": "20.00",
+                "UserID": "GIC",
+                "TransDate": "2023-05-05 11:49:24.000000",
+                "UserID2": "GIC",
+                "Lupdate": "2023-10-26 15:33:05.000000",
+                "ItemParameterName": "Moisture"
+            },
+            {
+                "id": "2",
+                "ItemID": "SO",
+                "ItemParameterID": "2",
+                "MinValue": "2.00",
+                "BaseValue": "2.00",
+                "MaxValue": "20.00",
+                "UserID": "GIC",
+                "TransDate": "2023-05-05 11:49:24.000000",
+                "UserID2": "GIC",
+                "Lupdate": "2023-10-26 15:33:05.000000",
+                "ItemParameterName": "Damaged"
+            },
+            {
+                "id": "3",
+                "ItemID": "SO",
+                "ItemParameterID": "3",
+                "MinValue": "2.00",
+                "BaseValue": "2.00",
+                "MaxValue": "7.00",
+                "UserID": "GIC",
+                "TransDate": "2023-05-05 11:49:24.000000",
+                "UserID2": "GIC",
+                "Lupdate": "2023-10-26 15:33:05.000000",
+                "ItemParameterName": "Foreign Material"
+            }
+        ]
+    },
+    "layers_list": [
+        {
+            "id": "370",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "1",
+            "qty": "2",
+            "unit": "Bags",
+            "Transdate": "2023-11-07 15:14:41.000000",
+            "UserID": "8",
+            "QCparameter": [
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "1",
+                    "ParameterValue": "2",
+                    "ItemParameterName": "Moisture"
+                },
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "2",
+                    "ParameterValue": "10",
+                    "ItemParameterName": "Damaged"
+                },
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "3",
+                    "ParameterValue": "5",
+                    "ItemParameterName": "Foreign Material"
+                }
+            ]
+        },
+        {
+            "id": "371",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "1",
+            "qty": "21",
+            "unit": "Katta",
+            "Transdate": "2023-11-07 16:06:30.000000",
+            "UserID": "8",
+            "QCparameter": [
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "1",
+                    "ParameterValue": "2",
+                    "ItemParameterName": "Moisture"
+                },
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "2",
+                    "ParameterValue": "10",
+                    "ItemParameterName": "Damaged"
+                },
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "3",
+                    "ParameterValue": "5",
+                    "ItemParameterName": "Foreign Material"
+                }
+            ]
+        },
+        {
+            "id": "377",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "1",
+            "qty": "4",
+            "unit": "Bags",
+            "Transdate": "2023-11-07 16:53:19.000000",
+            "UserID": "8",
+            "QCparameter": [
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "1",
+                    "ParameterValue": "2",
+                    "ItemParameterName": "Moisture"
+                },
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "2",
+                    "ParameterValue": "10",
+                    "ItemParameterName": "Damaged"
+                },
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "3",
+                    "ParameterValue": "5",
+                    "ItemParameterName": "Foreign Material"
+                }
+            ]
+        },
+        {
+            "id": "378",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "1",
+            "qty": "55",
+            "unit": "Katta",
+            "Transdate": "2023-11-07 16:53:37.000000",
+            "UserID": "8",
+            "QCparameter": [
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "1",
+                    "ParameterValue": "2",
+                    "ItemParameterName": "Moisture"
+                },
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "2",
+                    "ParameterValue": "10",
+                    "ItemParameterName": "Damaged"
+                },
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "3",
+                    "ParameterValue": "5",
+                    "ItemParameterName": "Foreign Material"
+                }
+            ]
+        },
+        {
+            "id": "379",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "1",
+            "qty": "61",
+            "unit": "Bags",
+            "Transdate": "2023-11-07 16:57:13.000000",
+            "UserID": "8",
+            "QCparameter": [
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "1",
+                    "ParameterValue": "2",
+                    "ItemParameterName": "Moisture"
+                },
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "2",
+                    "ParameterValue": "10",
+                    "ItemParameterName": "Damaged"
+                },
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "3",
+                    "ParameterValue": "5",
+                    "ItemParameterName": "Foreign Material"
+                }
+            ]
+        },
+        {
+            "id": "380",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "1",
+            "qty": "21",
+            "unit": "Bags",
+            "Transdate": "2023-11-07 17:08:13.000000",
+            "UserID": "8",
+            "QCparameter": [
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "1",
+                    "ParameterValue": "2",
+                    "ItemParameterName": "Moisture"
+                },
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "2",
+                    "ParameterValue": "10",
+                    "ItemParameterName": "Damaged"
+                },
+                {
+                    "layer_number": "1",
+                    "ItemParameterID": "3",
+                    "ParameterValue": "5",
+                    "ItemParameterName": "Foreign Material"
+                }
+            ]
+        },
+        {
+            "id": "387",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "2",
+            "qty": "66",
+            "unit": "Bags",
+            "Transdate": "2023-11-07 17:33:58.000000",
+            "UserID": "14",
+            "QCparameter": [
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "1",
+                    "ParameterValue": "1",
+                    "ItemParameterName": "Moisture"
+                },
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "2",
+                    "ParameterValue": "2",
+                    "ItemParameterName": "Damaged"
+                },
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "3",
+                    "ParameterValue": "3",
+                    "ItemParameterName": "Foreign Material"
+                }
+            ]
+        },
+        {
+            "id": "388",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "2",
+            "qty": "61",
+            "unit": "Katta",
+            "Transdate": "2023-11-07 17:34:54.000000",
+            "UserID": "14",
+            "QCparameter": [
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "1",
+                    "ParameterValue": "1",
+                    "ItemParameterName": "Moisture"
+                },
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "2",
+                    "ParameterValue": "2",
+                    "ItemParameterName": "Damaged"
+                },
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "3",
+                    "ParameterValue": "3",
+                    "ItemParameterName": "Foreign Material"
+                }
+            ]
+        },
+        {
+            "id": "389",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "4",
+            "qty": "44",
+            "unit": "Katta",
+            "Transdate": "2023-11-07 17:35:29.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "390",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "2",
+            "qty": "68",
+            "unit": "Bags",
+            "Transdate": "2023-11-07 17:42:25.000000",
+            "UserID": "14",
+            "QCparameter": [
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "1",
+                    "ParameterValue": "1",
+                    "ItemParameterName": "Moisture"
+                },
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "2",
+                    "ParameterValue": "2",
+                    "ItemParameterName": "Damaged"
+                },
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "3",
+                    "ParameterValue": "3",
+                    "ItemParameterName": "Foreign Material"
+                }
+            ]
+        },
+        {
+            "id": "391",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "2",
+            "qty": "21",
+            "unit": "Bags",
+            "Transdate": "2023-11-07 17:44:35.000000",
+            "UserID": "14",
+            "QCparameter": [
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "1",
+                    "ParameterValue": "1",
+                    "ItemParameterName": "Moisture"
+                },
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "2",
+                    "ParameterValue": "2",
+                    "ItemParameterName": "Damaged"
+                },
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "3",
+                    "ParameterValue": "3",
+                    "ItemParameterName": "Foreign Material"
+                }
+            ]
+        },
+        {
+            "id": "397",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "12",
+            "qty": "5",
+            "unit": "Bags",
+            "Transdate": "2023-11-07 17:48:07.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "398",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "2",
+            "qty": "92",
+            "unit": "Bags",
+            "Transdate": "2023-11-07 17:52:32.000000",
+            "UserID": "14",
+            "QCparameter": [
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "1",
+                    "ParameterValue": "1",
+                    "ItemParameterName": "Moisture"
+                },
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "2",
+                    "ParameterValue": "2",
+                    "ItemParameterName": "Damaged"
+                },
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "3",
+                    "ParameterValue": "3",
+                    "ItemParameterName": "Foreign Material"
+                }
+            ]
+        },
+        {
+            "id": "399",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "13",
+            "qty": "1",
+            "unit": "Bags",
+            "Transdate": "2023-11-07 17:53:19.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "400",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "2",
+            "qty": "54",
+            "unit": "Bags",
+            "Transdate": "2023-11-07 17:57:57.000000",
+            "UserID": "14",
+            "QCparameter": [
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "1",
+                    "ParameterValue": "1",
+                    "ItemParameterName": "Moisture"
+                },
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "2",
+                    "ParameterValue": "2",
+                    "ItemParameterName": "Damaged"
+                },
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "3",
+                    "ParameterValue": "3",
+                    "ItemParameterName": "Foreign Material"
+                }
+            ]
+        },
+        {
+            "id": "401",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "16",
+            "qty": "88",
+            "unit": "Katta",
+            "Transdate": "2023-11-07 18:07:40.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "404",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "17",
+            "qty": "22",
+            "unit": "Katta",
+            "Transdate": "2023-11-07 18:11:32.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "405",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "17",
+            "qty": "22",
+            "unit": "Bags",
+            "Transdate": "2023-11-07 18:11:42.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "406",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "19",
+            "qty": "1",
+            "unit": "Katta",
+            "Transdate": "2023-11-07 18:15:18.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "407",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "19",
+            "qty": "25",
+            "unit": "Bags",
+            "Transdate": "2023-11-07 18:15:36.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "408",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "21",
+            "qty": "27",
+            "unit": "Katta",
+            "Transdate": "2023-11-07 18:20:53.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "409",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "21",
+            "qty": "27",
+            "unit": "Bags",
+            "Transdate": "2023-11-07 18:21:14.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "410",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "23",
+            "qty": "29",
+            "unit": "Katta",
+            "Transdate": "2023-11-07 18:23:04.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "411",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "23",
+            "qty": "30",
+            "unit": "Katta",
+            "Transdate": "2023-11-07 18:23:29.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "412",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "24",
+            "qty": "32",
+            "unit": "Katta",
+            "Transdate": "2023-11-07 18:23:59.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "413",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "24",
+            "qty": "33",
+            "unit": "Katta",
+            "Transdate": "2023-11-07 18:24:33.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "414",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "2",
+            "qty": "11",
+            "unit": "Katta",
+            "Transdate": "2023-11-07 18:28:41.000000",
+            "UserID": "14",
+            "QCparameter": [
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "1",
+                    "ParameterValue": "1",
+                    "ItemParameterName": "Moisture"
+                },
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "2",
+                    "ParameterValue": "2",
+                    "ItemParameterName": "Damaged"
+                },
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "3",
+                    "ParameterValue": "3",
+                    "ItemParameterName": "Foreign Material"
+                }
+            ]
+        },
+        {
+            "id": "415",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "2",
+            "qty": "18",
+            "unit": "Katta",
+            "Transdate": "2023-11-07 18:46:36.000000",
+            "UserID": "14",
+            "QCparameter": [
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "1",
+                    "ParameterValue": "1",
+                    "ItemParameterName": "Moisture"
+                },
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "2",
+                    "ParameterValue": "2",
+                    "ItemParameterName": "Damaged"
+                },
+                {
+                    "layer_number": "2",
+                    "ItemParameterID": "3",
+                    "ParameterValue": "3",
+                    "ItemParameterName": "Foreign Material"
+                }
+            ]
+        },
+        {
+            "id": "416",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "29",
+            "qty": "51",
+            "unit": "Katta",
+            "Transdate": "2023-11-07 19:01:34.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "417",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "30",
+            "qty": "52",
+            "unit": "Bags",
+            "Transdate": "2023-11-07 19:02:10.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "418",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "31",
+            "qty": "2",
+            "unit": "Katta",
+            "Transdate": "2023-11-08 10:40:05.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "419",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "32",
+            "qty": "32",
+            "unit": "Katta",
+            "Transdate": "2023-11-08 10:40:12.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "420",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "33",
+            "qty": "64",
+            "unit": "Bags",
+            "Transdate": "2023-11-08 10:40:23.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "421",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "34",
+            "qty": "2",
+            "unit": "Katta",
+            "Transdate": "2023-11-08 10:42:45.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "422",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "35",
+            "qty": "32",
+            "unit": "Bags",
+            "Transdate": "2023-11-08 10:42:54.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "423",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "36",
+            "qty": "66",
+            "unit": "Katta",
+            "Transdate": "2023-11-08 10:55:35.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "424",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "37",
+            "qty": "32",
+            "unit": "Bags",
+            "Transdate": "2023-11-08 10:55:41.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "425",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "38",
+            "qty": "11",
+            "unit": "Katta",
+            "Transdate": "2023-11-08 10:55:48.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "426",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "39",
+            "qty": "12",
+            "unit": "Bags",
+            "Transdate": "2023-11-08 10:55:53.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "427",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "40",
+            "qty": "12",
+            "unit": "Katta",
+            "Transdate": "2023-11-08 11:05:34.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "428",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "41",
+            "qty": "32",
+            "unit": "Bags",
+            "Transdate": "2023-11-08 11:05:41.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "429",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "42",
+            "qty": "66",
+            "unit": "Katta",
+            "Transdate": "2023-11-08 11:05:50.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "430",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "43",
+            "qty": "22",
+            "unit": "Bags",
+            "Transdate": "2023-11-08 11:11:46.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "431",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "44",
+            "qty": "20",
+            "unit": "Bags",
+            "Transdate": "2023-11-08 11:11:53.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "432",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "45",
+            "qty": "33",
+            "unit": "Katta",
+            "Transdate": "2023-11-08 11:31:29.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "433",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "46",
+            "qty": "2",
+            "unit": "Bags",
+            "Transdate": "2023-11-08 11:44:40.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "434",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "47",
+            "qty": "2",
+            "unit": "Katta",
+            "Transdate": "2023-11-08 12:18:52.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "435",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "48",
+            "qty": "3",
+            "unit": "Bags",
+            "Transdate": "2023-11-08 12:19:02.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "436",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "49",
+            "qty": "5",
+            "unit": "Katta",
+            "Transdate": "2023-11-08 12:29:17.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "437",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "50",
+            "qty": "32",
+            "unit": "Bags",
+            "Transdate": "2023-11-08 12:29:37.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "438",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "51",
+            "qty": "6",
+            "unit": "Bags",
+            "Transdate": "2023-11-08 13:16:40.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "439",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "52",
+            "qty": "6",
+            "unit": "Katta",
+            "Transdate": "2023-11-08 13:16:45.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "440",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "53",
+            "qty": "10",
+            "unit": "Bags",
+            "Transdate": "2023-11-08 13:16:52.000000",
+            "UserID": "14",
+            "QCparameter": []
+        },
+        {
+            "id": "441",
+            "BookingID": "KHAMGAOS071123001",
+            "Gate_in_ID": "GKHAMGAO0711230001",
+            "layer_number": "54",
+            "qty": "2",
+            "unit": "Bags",
+            "Transdate": "2023-11-08 13:25:16.000000",
+            "UserID": "14",
+            "QCparameter": []
+        }
+    ]
+}

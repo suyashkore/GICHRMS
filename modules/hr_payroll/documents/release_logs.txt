@@ -1,0 +1,71 @@
+26_03_2024:
+-Payslip: Payslip download ZIP, fix error of employee without Employee ID number, when exporting pay slip, no pay slip PDF file will be created
+
+27_06_2024:
+V1.1.0
+Employee: add new column
+passport_no, passport_expiry, emirates_ID_No, EID_expiry, labour_card_No, contact_person_home_country, home_contact_No, other_contact_person, other_contact_No, visa_validity, phonenumber
+
+22_07_2024:
+Update errors related to formulas in Template
+
+01_08_2024:
+Hr payroll module: Payslip PDF - fix bug logo Height
+
+1.1.1
+27_09_2024
+add "acc_mapping" column for accounting module
+
+02_10_2024:
+update error Black screen appearance when choosing on select box in Handsontable  (only RTL direction )
+
+07_10_2024:
+-Payslip: Payslip download ZIP, fix error of employee without Employee ID number FOR CASE UPDATE PAYSLIP TEMPLATE, when exporting pay slip, no pay slip PDF file will be created
+- Payroll management: fixed the error of Employee code having "/" causing error when loading payslip outside the management screen,
+- Payroll details: fixed the error when employee loads payslip in excel format and then presses "Save" button causing data loss.
+
+08_10_2024
+Payslip PDF: Remove values not found in Payslip PDF  because PDF template contains columns outside of payroll
+Payslip PDF: Format number on PDF
+
+08_10_2024: 
+Payslip: fix bug don't close payslip
+
+14_10_2024
+Attendance timesheet leave: fix bug synchronization_attendance timesheet leave
+
+12_12_2024
+Hr payroll: Fix bug format Bank account  on PDF
+
+18_12_2024
+Hr payroll: Fix bug format Bank account  on Excel and auto rounding error in excel
+
+1.1.2
+14_02_2025
+- Overtime_hours: Add Overtime management feature, synchronize Overtime from Timesheet to
+- Add 13th month salary column
+
+1.1.3
+18_02_2025
+- Payslip: Send Email to Staff when closing Payslip
+
+22_04_2025
+-Add Language key
+
+20_05_2025
+Payslip: Fix bug "account details which we are filling in hr records having 0 at the start gets removed when payroll is generated"
+
+1.1.4
+03_09_2025
+Integration with Projects:
+- In project details, manage cost lists for employees
+- Add new cost for one or more employees on a given date or add project bonuses for one or more employees
+Payslip: Add 2 fields "Project Salary" and "Project Bonus" data from Project
+
+1.1.5
+16_09_2025
+Payslip: update payslip PDF download via cronjob, avoid timeout or 404 error when payslip has many employees
+
+1.1.6
+14_11_2025
+Payslip: Add 2 columns Hourly rate and Total Hourly Pay
