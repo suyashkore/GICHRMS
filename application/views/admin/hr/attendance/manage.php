@@ -18,12 +18,18 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
 <div id="wrapper">
     <div class="content">
         <div class="row">
-            <div class="col-md-12 mb-3">
+            <!-- <div class="col-md-12 mb-3">
                 <h4 class="page-title">HR / Attendance</h4>
-            </div>
+            </div> -->
         </div>
         <div class="panel_s">
             <div class="panel-body">
+                  <div class="page-actions mb-4">
+                    <div>
+                        <h4 class="page-heading">HR / Attendance</h4>
+                        <!-- <p class="page-subtitle">Track leave requests, presence, and attendance status at a glance with a clean calendar view.</p> -->
+                    </div>
+                </div>
                 <!-- Summary Boxes -->
                 <!-- <div class="summary-grid mb-4">
                     <div class="summary-box s-present">

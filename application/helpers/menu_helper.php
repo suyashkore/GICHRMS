@@ -31,6 +31,13 @@ function app_init_admin_sidebar_menu_items()
             'position' => 5,
             'badge'    => [],
         ]);
+           $CI->app_menu->add_sidebar_children_item('hr', [
+            'slug'     => 'hr-Requests',
+            'name'     => 'Requests',
+            'href'     => admin_url('hr/requests'),
+            'position' => 5,
+            'badge'    => [],
+        ]);
 
       
 
