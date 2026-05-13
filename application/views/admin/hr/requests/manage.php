@@ -121,6 +121,135 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
                                           </div>
                                     </div>
 
+                                    <!-- Card 3: Leave And Attendance Report -->
+                                    <div class="req-card req-card-report" id="card-report" onclick="toggleCard('report')">
+                                          <div class="req-card-inner">
+                                                <div class="req-card-icon rc-purple">
+                                                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path d="M4 6h16M4 10h16M8 14h8M6 18h12"/>
+                                                      </svg>
+                                                </div>
+                                                <div class="req-card-text">
+                                                      <h5>Leave And Attendance Report</h5>
+                                                      <p>View report summaries</p>
+                                                </div>
+                                                <span class="req-card-chevron" id="chev-report">&#8250;</span>
+                                          </div>
+                                          <div class="req-options" id="opts-report">
+                                                <div class="req-option" onclick="openForm(event,'report','Leave')">
+                                                      Leave
+                                                </div>
+                                                <div class="req-option" onclick="openForm(event,'report','Regularisation')">
+                                                      Regularisation
+                                                </div>
+                                                <div class="req-option" onclick="openForm(event,'report','Work From Home')">
+                                                      Work From Home
+                                                </div>
+                                                <div class="req-option" onclick="openForm(event,'report','On Duty')">
+                                                      On Duty
+                                                </div>
+                                                <div class="req-option" onclick="openForm(event,'report','Comp Off')">
+                                                      Comp-Off
+                                                </div>
+                                                <div class="req-option" onclick="openForm(event,'report','Short Leave')">
+                                                      Short Leave
+                                                </div>
+                                                <div class="req-option" onclick="openForm(event,'report','Restricted Holiday')">
+                                                      Restricted Holiday
+                                                </div>
+                                          </div>
+                                    </div>
+
+                                    <!-- Card 4: Expense Request -->
+                                    <div class="req-card req-card-expense" id="card-expense" onclick="toggleCard('expense')">
+                                          <div class="req-card-inner">
+                                                <div class="req-card-icon rc-orange">
+                                                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path d="M4 7h16M4 12h16M4 17h10" />
+                                                      </svg>
+                                                </div>
+                                                <div class="req-card-text">
+                                                      <h5>Expense Request</h5>
+                                                      <p>Submit expense requests with receipt preview</p>
+                                                </div>
+                                                <span class="req-card-chevron" id="chev-expense">&#8250;</span>
+                                          </div>
+                                          <div class="req-options" id="opts-expense">
+                                                <div class="req-option" onclick="openForm(event,'expense','Expense')">
+                                                      Expense
+                                                </div>
+                                          </div>
+                                    </div>
+
+                                    <!-- Card 5: Assets -->
+                                    <div class="req-card req-card-assets" id="card-assets" onclick="toggleCard('assets')">
+                                          <div class="req-card-inner">
+                                                <div class="req-card-icon rc-yellow">
+                                                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path d="M4 5h16v14H4z" />
+                                                            <path d="M4 9h16" />
+                                                            <path d="M8 5v14" />
+                                                      </svg>
+                                                </div>
+                                                <div class="req-card-text">
+                                                      <h5>Assets</h5>
+                                                      <p>Request new equipment or assets</p>
+                                                </div>
+                                                <span class="req-card-chevron" id="chev-assets">&#8250;</span>
+                                          </div>
+                                          <div class="req-options" id="opts-assets">
+                                                <div class="req-option" onclick="openForm(event,'assets','Asset Request')">
+                                                      Asset Request
+                                                </div>
+                                          </div>
+                                    </div>
+
+                                    <!-- Card 6: Onboarding -->
+                                    <div class="req-card req-card-onboarding" id="card-onboarding" onclick="toggleCard('onboarding')">
+                                          <div class="req-card-inner">
+                                                <div class="req-card-icon rc-teal">
+                                                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path d="M4 4h16v16H4z" />
+                                                            <path d="M4 8h16" />
+                                                            <path d="M8 4v16" />
+                                                      </svg>
+                                                </div>
+                                                <div class="req-card-text">
+                                                      <h5>Onboarding</h5>
+                                                      <p>Start new joiner CTC approval requests</p>
+                                                </div>
+                                                <span class="req-card-chevron" id="chev-onboarding">&#8250;</span>
+                                          </div>
+                                          <div class="req-options" id="opts-onboarding">
+                                                <div class="req-option" onclick="openForm(event,'onboarding','CTC Approval')">
+                                                      CTC Approval
+                                                </div>
+                                          </div>
+                                    </div>
+
+                                    <!-- Card 6: Offboarding -->
+                                    <div class="req-card req-card-offboarding" id="card-offboarding" onclick="toggleCard('offboarding')">
+                                          <div class="req-card-inner">
+                                                <div class="req-card-icon rc-red">
+                                                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path d="M4 4h16v16H4z" />
+                                                            <path d="M9 9l6 6" />
+                                                            <path d="M15 9l-6 6" />
+                                                      </svg>
+                                                </div>
+                                                <div class="req-card-text">
+                                                      <h5>Offboarding</h5>
+                                                      <p>Submit resignation and exit requests</p>
+                                                </div>
+                                                <span class="req-card-chevron" id="chev-offboarding">&#8250;</span>
+                                          </div>
+                                          <div class="req-options" id="opts-offboarding">
+                                                <div class="req-option" onclick="openForm(event,'offboarding','Resignation')">
+                                                      Resignation
+                                                </div>
+                                          </div>
+                                    </div>
+
                               </div><!-- /req-left -->
 
                               <!-- RIGHT: Panel -->
@@ -289,6 +418,18 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
             border-left: 3px solid #378ADD;
       }
 
+      .req-card-onboarding {
+            border-left: 3px solid #0F766E;
+      }
+
+      .req-card-assets {
+            border-left: 3px solid #F59E0B;
+      }
+
+      .req-card-offboarding {
+            border-left: 3px solid #DC2626;
+      }
+
       .req-card-inner {
             display: flex;
             align-items: center;
@@ -314,6 +455,39 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
       .rc-blue {
             background: #E6F1FB;
             color: #185FA5;
+      }
+
+      .rc-teal {
+            background: #D1FAE5;
+            color: #0F766E;
+      }
+
+      .rc-yellow {
+            background: #FEF3C7;
+            color: #B45309;
+      }
+
+      .rc-red {
+            background: #FEE2E2;
+            color: #B91C1C;
+      }
+
+      .rc-orange {
+            background: #FEF3C7;
+            color: #B45309;
+      }
+
+      .rc-purple {
+            background: #F3E8FF;
+            color: #6D28D9;
+      }
+
+      .req-card-report {
+            border-left: 3px solid #8B5CF6;
+      }
+
+      .req-card-expense {
+            border-left: 3px solid #F59E0B;
       }
 
       .req-card-text {
@@ -352,6 +526,40 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
             border-top: 1px solid #f0f2f5;
             padding: 4px 0;
             background: #f8f9fb;
+      }
+
+      .report-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 18px;
+      }
+
+      .report-table th,
+      .report-table td {
+            padding: 14px 12px;
+            border-bottom: 1px solid #e5e7eb;
+            text-align: left;
+            vertical-align: middle;
+            color: #344054;
+      }
+
+      .report-table th {
+            background: #f8fafc;
+            font-weight: 700;
+            color: #0f172a;
+      }
+
+      .report-table tbody tr:hover {
+            background: #f8f9fb;
+      }
+
+      .report-empty {
+            margin-top: 18px;
+            padding: 18px;
+            border-radius: 14px;
+            background: #f8fafc;
+            color: #475569;
+            font-size: 0.92rem;
       }
 
       .req-options.show {
@@ -832,6 +1040,30 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
       .btn-submit:hover {
             background: #0C447C;
       }
+
+      /* ── Report Status Badges ── */
+      .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+      }
+
+      .badge-success {
+            background: #D1FAE5;
+            color: #065F46;
+      }
+
+      .badge-warning {
+            background: #FEF3C7;
+            color: #92400E;
+      }
+
+      .badge-danger {
+            background: #FEE2E2;
+            color: #991B1B;
+      }
 </style>
 
 <script>
@@ -845,9 +1077,11 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
             var isOpen = card.classList.contains('open');
 
             // Close all cards first
-            ['leave', 'att'].forEach(function (c) {
-                  document.getElementById('card-' + c).classList.remove('open');
-                  document.getElementById('opts-' + c).classList.remove('show');
+            ['leave', 'att', 'report', 'expense', 'assets', 'onboarding', 'offboarding'].forEach(function (c) {
+                  var cardEl = document.getElementById('card-' + c);
+                  var optsEl = document.getElementById('opts-' + c);
+                  if (cardEl) cardEl.classList.remove('open');
+                  if (optsEl) optsEl.classList.remove('show');
             });
 
             if (!isOpen) {
@@ -859,6 +1093,8 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
             }
       }
 
+
+
       function openForm(e, cardId, formName) {
             e.stopPropagation();
 
@@ -868,6 +1104,119 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
             });
             e.currentTarget.classList.add('active');
             activeOption = formName;
+
+            if (cardId === 'report') {
+                  // Load report forms view and use reportModule to render
+                  fetch('<?php echo base_url("admin/hr/requests/load_report_forms"); ?>')
+                  .then(response => response.text())
+                  .then(data => {
+                        document.getElementById('dynamic-form-content').innerHTML = data;
+                        document.getElementById('rform-badge').textContent = formName;
+                        document.getElementById('rform-title').textContent = formName + ' Report';
+                        document.getElementById('rform-sub').textContent = 'View leave and attendance report data for ' + formName.toLowerCase() + '.';
+                        document.getElementById('req-empty').style.display = 'none';
+                        document.getElementById('req-form-area').style.display = 'block';
+                        // Trigger report module to load data
+                        if (typeof reportModule !== 'undefined' && typeof reportModule.loadReport === 'function') {
+                              reportModule.loadReport(formName);
+                        }
+                  })
+                  .catch(error => {
+                        console.error('Error loading report:', error);
+                        alert('Error loading report. Please try again.');
+                  });
+                  return;
+            }
+
+            if (cardId === 'expense') {
+                  fetch('<?php echo base_url("admin/hr/requests/load_expense_form"); ?>')
+                  .then(response => response.text())
+                  .then(data => {
+                        document.getElementById('dynamic-form-content').innerHTML = data;
+                        document.getElementById('rform-badge').textContent = formName;
+                        document.getElementById('rform-title').textContent = formName;
+                        document.getElementById('rform-sub').textContent = 'Submit an expense request with receipt details.';
+                        document.getElementById('req-empty').style.display = 'none';
+                        document.getElementById('req-form-area').style.display = 'block';
+                        if (typeof expenseModule !== 'undefined' && typeof expenseModule.loadExpenseUI === 'function') {
+                              expenseModule.loadExpenseUI();
+                        }
+                  })
+                  .catch(function(error) {
+                        console.error('Error loading expense form:', error);
+                        alert('Error loading expense screen. Please try again.');
+                  });
+                  return;
+            }
+
+            if (cardId === 'assets') {
+                  fetch('<?php echo base_url("admin/hr/requests/load_assets_forms"); ?>')
+                  .then(response => response.text())
+                  .then(data => {
+                        document.getElementById('dynamic-form-content').innerHTML = data;
+                        var target = document.getElementById('form-' + formName);
+                        if (target) {
+                              target.style.display = 'block';
+                        }
+                        document.getElementById('rform-badge').textContent = formName;
+                        document.getElementById('rform-title').textContent = formName;
+                        document.getElementById('rform-sub').textContent = 'Request equipment, software, or other assets.';
+                        document.getElementById('req-empty').style.display = 'none';
+                        document.getElementById('req-form-area').style.display = 'block';
+                        if (typeof assetModule !== 'undefined' && typeof assetModule.loadAssetUI === 'function') {
+                              assetModule.loadAssetUI();
+                        }
+                  })
+                  .catch(function(error) {
+                        console.error('Error loading assets form:', error);
+                        alert('Error loading assets screen. Please try again.');
+                  });
+                  return;
+            }
+
+            if (cardId === 'onboarding') {
+                  fetch('<?php echo base_url("admin/hr/requests/load_onboarding_forms"); ?>')
+                  .then(response => response.text())
+                  .then(data => {
+                        document.getElementById('dynamic-form-content').innerHTML = data;
+                        var target = document.getElementById('form-' + formName);
+                        if (target) {
+                              target.style.display = 'block';
+                        }
+                        document.getElementById('rform-badge').textContent = formName;
+                        document.getElementById('rform-title').textContent = formName;
+                        document.getElementById('rform-sub').textContent = 'Start onboarding by submitting CTC approval details.';
+                        document.getElementById('req-empty').style.display = 'none';
+                        document.getElementById('req-form-area').style.display = 'block';
+                  })
+                  .catch(function(error) {
+                        console.error('Error loading onboarding form:', error);
+                        alert('Error loading onboarding screen. Please try again.');
+                  });
+                  return;
+            }
+
+            if (cardId === 'offboarding') {
+                  fetch('<?php echo base_url("admin/hr/requests/load_offboarding_forms"); ?>')
+                  .then(response => response.text())
+                  .then(data => {
+                        document.getElementById('dynamic-form-content').innerHTML = data;
+                        var target = document.getElementById('form-' + formName);
+                        if (target) {
+                              target.style.display = 'block';
+                        }
+                        document.getElementById('rform-badge').textContent = formName;
+                        document.getElementById('rform-title').textContent = formName;
+                        document.getElementById('rform-sub').textContent = 'Submit resignation details for offboarding.';
+                        document.getElementById('req-empty').style.display = 'none';
+                        document.getElementById('req-form-area').style.display = 'block';
+                  })
+                  .catch(function(error) {
+                        console.error('Error loading offboarding form:', error);
+                        alert('Error loading offboarding screen. Please try again.');
+                  });
+                  return;
+            }
 
             // Determine which module to load
             var moduleUrl = '';
@@ -932,4 +1281,7 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
       }
 </script>
 
+<script src="<?php echo base_url('assets/js/report_module.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/expense_module.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/asset_module.js'); ?>"></script>
 <?php init_tail(); ?>

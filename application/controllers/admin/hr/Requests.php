@@ -37,4 +37,29 @@ class Requests extends AdminController
     {
         $this->load->view('admin/hr/requests/attendance_forms');
     }
+
+    public function load_report_forms()
+    {
+        $this->load->view('admin/hr/requests/report_forms');
+    }
+
+    public function load_expense_form()
+    {
+        $this->load->view('admin/hr/requests/expense_form');
+    }
+
+    public function load_assets_forms()
+    {
+        $this->load->view('admin/hr/requests/asset_forms');
+    }
+
+    public function load_onboarding_forms()
+    {
+        $this->load->view('admin/hr/requests/onboarding_forms');
+    }
+
+    public function load_offboarding_forms()
+    {
+        $this->load->view('admin/hr/requests/offboarding_forms');
+    }
 }
