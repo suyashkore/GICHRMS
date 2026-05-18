@@ -38,15 +38,44 @@ function app_init_admin_sidebar_menu_items()
             'position' => 5,
             'badge'    => [],
         ]);
+        
+        $CI->app_menu->add_sidebar_children_item('hr', [
+            'slug'     => 'hr-onboarding',
+            'name'     => 'Onboarding',
+            'href'     => admin_url('hr/onboarding/add'),
+            'position' => 6,
+            'badge'    => [],
+        ]);
 
-      
+        $CI->app_menu->add_sidebar_children_item('hr', [
+                    'slug'     => 'hr-offboarding',
+                    'name'     => 'Resignation',
+                    'href'     => admin_url('hr/offboarding/add'),
+                    'position' => 7,
+                    'badge'    => [],
+                ]);
 
+        $CI->app_menu->add_sidebar_children_item('hr', [
+            'slug'     => 'hr-expense-management',
+            'name'     => 'Expense Management',
+            'href'     => admin_url('hr/expense_management/add'),
+            'position' => 7,
+            'badge'    => [],
+        ]);
 
-        $CI->app_menu->add_sidebar_children_item('hr_payroll', [
-            'slug'     => 'hr_manage_employees',
-            'name'     => _l('Attendance'),
-            'href'     => admin_url('hr/attendance/manage'),
-            'position' => 2,
+        $CI->app_menu->add_sidebar_children_item('hr', [
+            'slug'     => 'hr-assets-management',
+            'name'     => 'Assets Management',
+            'href'     => admin_url('hr/assets_management/add'),
+            'position' => 8,
+            'badge'    => [],
+        ]);
+
+        $CI->app_menu->add_sidebar_children_item('hr', [
+            'slug'     => 'hr-reports',
+            'name'     => 'Reports',
+            'href'     => admin_url('hr/reports'),
+            'position' => 9,
             'badge'    => [],
         ]);
     }

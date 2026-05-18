@@ -75,18 +75,18 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
                                                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
                                                       Comp Off
                                                 </div>
-                                                <div class="req-option" onclick="openForm(event,'leave','Resignation')">
+                                                <!-- <div class="req-option" onclick="openForm(event,'leave','Resignation')">
                                                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
                                                       Resignation
-                                                </div>
-                                                <div class="req-option" onclick="openForm(event,'leave','Expense')">
+                                                </div> -->
+                                                <!-- <div class="req-option" onclick="openForm(event,'leave','Expense')">
                                                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                                                       Expense
                                                 </div>
                                                 <div class="req-option" onclick="openForm(event,'leave','Restricted Holiday')">
                                                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                                                       Restricted Holiday
-                                                </div>
+                                                </div> -->
                                                 <div class="req-option" onclick="openForm(event,'leave','Short Leave')">
                                                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                                                       Short Leave
@@ -94,8 +94,9 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
                                           </div>
                                     </div>
 
+                                    <!--
                                     <!-- Card 2: Attendance Request -->
-                                    <div class="req-card req-card-att" id="card-att" onclick="toggleCard('att')">
+                                    <!-- <div class="req-card req-card-att" id="card-att" onclick="toggleCard('att')">
                                           <div class="req-card-inner">
                                                 <div class="req-card-icon rc-blue">
                                                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -119,49 +120,10 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
                                                       Missing Attendance
                                                 </div>
                                           </div>
-                                    </div>
-
-                                    <!-- Card 3: Leave And Attendance Report -->
-                                    <div class="req-card req-card-report" id="card-report" onclick="toggleCard('report')">
-                                          <div class="req-card-inner">
-                                                <div class="req-card-icon rc-purple">
-                                                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                                            <path d="M4 6h16M4 10h16M8 14h8M6 18h12"/>
-                                                      </svg>
-                                                </div>
-                                                <div class="req-card-text">
-                                                      <h5>Leave And Attendance Report</h5>
-                                                      <p>View report summaries</p>
-                                                </div>
-                                                <span class="req-card-chevron" id="chev-report">&#8250;</span>
-                                          </div>
-                                          <div class="req-options" id="opts-report">
-                                                <div class="req-option" onclick="openForm(event,'report','Leave')">
-                                                      Leave
-                                                </div>
-                                                <div class="req-option" onclick="openForm(event,'report','Regularisation')">
-                                                      Regularisation
-                                                </div>
-                                                <div class="req-option" onclick="openForm(event,'report','Work From Home')">
-                                                      Work From Home
-                                                </div>
-                                                <div class="req-option" onclick="openForm(event,'report','On Duty')">
-                                                      On Duty
-                                                </div>
-                                                <div class="req-option" onclick="openForm(event,'report','Comp Off')">
-                                                      Comp-Off
-                                                </div>
-                                                <div class="req-option" onclick="openForm(event,'report','Short Leave')">
-                                                      Short Leave
-                                                </div>
-                                                <div class="req-option" onclick="openForm(event,'report','Restricted Holiday')">
-                                                      Restricted Holiday
-                                                </div>
-                                          </div>
-                                    </div>
+                                    </div> -->
 
                                     <!-- Card 4: Expense Request -->
-                                    <div class="req-card req-card-expense" id="card-expense" onclick="toggleCard('expense')">
+                                    <!-- <div class="req-card req-card-expense" id="card-expense" onclick="toggleCard('expense')">
                                           <div class="req-card-inner">
                                                 <div class="req-card-icon rc-orange">
                                                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -179,10 +141,10 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
                                                       Expense
                                                 </div>
                                           </div>
-                                    </div>
+                                    </div> -->
 
                                     <!-- Card 5: Assets -->
-                                    <div class="req-card req-card-assets" id="card-assets" onclick="toggleCard('assets')">
+                                    <!-- <div class="req-card req-card-assets" id="card-assets" onclick="toggleCard('assets')">
                                           <div class="req-card-inner">
                                                 <div class="req-card-icon rc-yellow">
                                                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -202,10 +164,10 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
                                                       Asset Request
                                                 </div>
                                           </div>
-                                    </div>
+                                    </div> -->
 
                                     <!-- Card 6: Onboarding -->
-                                    <div class="req-card req-card-onboarding" id="card-onboarding" onclick="toggleCard('onboarding')">
+                                    <!-- <div class="req-card req-card-onboarding" id="card-onboarding" onclick="toggleCard('onboarding')">
                                           <div class="req-card-inner">
                                                 <div class="req-card-icon rc-teal">
                                                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -225,10 +187,10 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
                                                       CTC Approval
                                                 </div>
                                           </div>
-                                    </div>
+                                    </div> -->
 
                                     <!-- Card 6: Offboarding -->
-                                    <div class="req-card req-card-offboarding" id="card-offboarding" onclick="toggleCard('offboarding')">
+                                    <!-- <div class="req-card req-card-offboarding" id="card-offboarding" onclick="toggleCard('offboarding')">
                                           <div class="req-card-inner">
                                                 <div class="req-card-icon rc-red">
                                                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -248,7 +210,8 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
                                                       Resignation
                                                 </div>
                                           </div>
-                                    </div>
+                                    </div> -->
+                                    
 
                               </div><!-- /req-left -->
 
@@ -521,12 +484,15 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
 
       /* ── Options Dropdown ── */
       .req-options {
-            display: none;
+            /* display: none; */
             flex-direction: column;
             border-top: 1px solid #f0f2f5;
             padding: 4px 0;
             background: #f8f9fb;
       }
+      #opts-leave {
+            display: flex;
+       }
 
       .report-table {
             width: 100%;
