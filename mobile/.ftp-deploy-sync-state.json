@@ -1,0 +1,865 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1777986231278,
+    "data": [
+        {
+            "type": "folder",
+            "name": ".agents"
+        },
+        {
+            "type": "file",
+            "name": ".editorconfig",
+            "size": 252,
+            "hash": "f78cc5a2ef8ba61ad956d0f5db453748a981270f6a1b9f4a5a00df8690e7946d"
+        },
+        {
+            "type": "folder",
+            "name": ".codex"
+        },
+        {
+            "type": "file",
+            "name": ".env.example",
+            "size": 1081,
+            "hash": "d8536f4db6a4a5cdade162e0ca1663cc34cb2d6588d6902f804a485b3df1a4b9"
+        },
+        {
+            "type": "file",
+            "name": "AGENTS.md",
+            "size": 11477,
+            "hash": "5554769a08ab79732595a240e32fd0003098eb61d3fc229427699bb40f63b82f"
+        },
+        {
+            "type": "file",
+            "name": "ERROR.md",
+            "size": 1123,
+            "hash": "48a93fd8346dee76ff61c0b9eb75a1bc9c2f48159a4107ae6c3237e6dd632934"
+        },
+        {
+            "type": "file",
+            "name": "MIGRATION.md",
+            "size": 425,
+            "hash": "a058d67b3b618dd73cfef2bacb353e92f361e23295dabe8959bc3b4d9d269296"
+        },
+        {
+            "type": "file",
+            "name": "README.md",
+            "size": 3911,
+            "hash": "d8b15dfcda5b6e61a96730afedc1ed5376e46ba367e21749a9d789cc222009c4"
+        },
+        {
+            "type": "file",
+            "name": "artisan",
+            "size": 425,
+            "hash": "f91a517c0c5d3a904c3f390933964a5e08ec1fc68146882730daac4aca4ffcec"
+        },
+        {
+            "type": "folder",
+            "name": "app"
+        },
+        {
+            "type": "file",
+            "name": "boost.json",
+            "size": 246,
+            "hash": "aa682baa11dbc61c407aa54d280d4fec413c202906f519a08503a29cd9f3f7fa"
+        },
+        {
+            "type": "folder",
+            "name": "bootstrap"
+        },
+        {
+            "type": "file",
+            "name": "composer.json",
+            "size": 2957,
+            "hash": "30ccd2446f142ddf6b11b4f490f7792ae9bf5ef5e03d7b60d6306fc439e3ae84"
+        },
+        {
+            "type": "file",
+            "name": "composer.lock",
+            "size": 356960,
+            "hash": "6520f5b15ba69cdf1ede3a9a3bf40a54d8a31686a61a40a2cef232a1347c4a7e"
+        },
+        {
+            "type": "folder",
+            "name": "config"
+        },
+        {
+            "type": "folder",
+            "name": "database"
+        },
+        {
+            "type": "file",
+            "name": "package-lock.json",
+            "size": 95298,
+            "hash": "911d924d2468da3653edcfb328b42df45795c9a3bdc9e8d777d1abff34c9d8af"
+        },
+        {
+            "type": "file",
+            "name": "package.json",
+            "size": 414,
+            "hash": "e1bf666b49a401c06ede562b32fc741b8e8dc45cca0a67de136edfbd51335f33"
+        },
+        {
+            "type": "file",
+            "name": "phpunit.xml",
+            "size": 1322,
+            "hash": "493369cfb7feea104da4bec214c2cc6526ca2f1b9d937c50a2961fc59cb61aaf"
+        },
+        {
+            "type": "folder",
+            "name": "public"
+        },
+        {
+            "type": "folder",
+            "name": "resources"
+        },
+        {
+            "type": "folder",
+            "name": "routes"
+        },
+        {
+            "type": "folder",
+            "name": "storage"
+        },
+        {
+            "type": "folder",
+            "name": "tests"
+        },
+        {
+            "type": "file",
+            "name": "vite.config.js",
+            "size": 436,
+            "hash": "b981a284135bcb7da21ea5e1aaa2dc31c8daeef92d9b4e5c79538bdb8dfaf6f0"
+        },
+        {
+            "type": "folder",
+            "name": ".agents/skills"
+        },
+        {
+            "type": "file",
+            "name": ".codex/config.toml",
+            "size": 139,
+            "hash": "1ff65e6309c04c9a6d04f87da85ac04d9fa620b3714540aab36c73d72e105da4"
+        },
+        {
+            "type": "folder",
+            "name": "app/Http"
+        },
+        {
+            "type": "folder",
+            "name": "app/Jobs"
+        },
+        {
+            "type": "folder",
+            "name": "app/Mail"
+        },
+        {
+            "type": "folder",
+            "name": "app/Models"
+        },
+        {
+            "type": "folder",
+            "name": "app/Providers"
+        },
+        {
+            "type": "file",
+            "name": "bootstrap/app.php",
+            "size": 981,
+            "hash": "8cceda70799753068a5cb1ef05890f8635c7c5648abee6f28c4f1ce519a75b96"
+        },
+        {
+            "type": "folder",
+            "name": "bootstrap/cache"
+        },
+        {
+            "type": "file",
+            "name": "bootstrap/providers.php",
+            "size": 89,
+            "hash": "f720e185207a343d4c19fc99dbb317a4187efbcd7d38a303a695bbdd77ffb943"
+        },
+        {
+            "type": "file",
+            "name": "config/app.php",
+            "size": 4281,
+            "hash": "2179083c26abe91b568d5e3b38bbf6eef49a80a97df72973320a3206fb0bda6f"
+        },
+        {
+            "type": "file",
+            "name": "config/auth.php",
+            "size": 4040,
+            "hash": "c7e204e9785c9f596d66fb884b493f658f2327f157646bdb4088efd6b3a7773f"
+        },
+        {
+            "type": "file",
+            "name": "config/cache.php",
+            "size": 3683,
+            "hash": "b8bcf382283330b94c0a602ff06452de819041ea709e28eea5065d51d1d7d085"
+        },
+        {
+            "type": "file",
+            "name": "config/database.php",
+            "size": 6982,
+            "hash": "06759b7b36b8641e9025fe03dd728970c4cb02d5b58ff709cbb0649987b4bfc2"
+        },
+        {
+            "type": "file",
+            "name": "config/filesystems.php",
+            "size": 2532,
+            "hash": "ba7060d7a23e490c3ce830656f6d24ad3ccf5b868e3293f2a12e411959dc5635"
+        },
+        {
+            "type": "file",
+            "name": "config/logging.php",
+            "size": 4340,
+            "hash": "299ec1ba5b5a803c8e20f666ae7628e442e856cc2ff7ac9e2adb17b97e8ad63b"
+        },
+        {
+            "type": "file",
+            "name": "config/mail.php",
+            "size": 3631,
+            "hash": "c43ff49a31c5f32ce21eb7159f2a4b3cd2f4074eaed5838d265646dbfedd3474"
+        },
+        {
+            "type": "file",
+            "name": "config/queue.php",
+            "size": 4199,
+            "hash": "6101774da7c8b79af46d0028f2b8b31a484c3f7eda10b76e5b27b6093ad364a4"
+        },
+        {
+            "type": "file",
+            "name": "config/sanctum.php",
+            "size": 3037,
+            "hash": "797bd69c696b20299d61b0a4b373b4ebf6c23403346e270d5a03e0005e410fe1"
+        },
+        {
+            "type": "file",
+            "name": "config/services.php",
+            "size": 1039,
+            "hash": "8258c4487eb1d73a97e569eb0e411e3f25368044812df4cba807860432be1d92"
+        },
+        {
+            "type": "file",
+            "name": "config/session.php",
+            "size": 7848,
+            "hash": "f2e75e189021597e29940c0859c00c3088ec591e403768fff5143c5687a80f59"
+        },
+        {
+            "type": "folder",
+            "name": "database/factories"
+        },
+        {
+            "type": "folder",
+            "name": "database/migrations"
+        },
+        {
+            "type": "folder",
+            "name": "database/seeders"
+        },
+        {
+            "type": "file",
+            "name": "public/.htaccess",
+            "size": 740,
+            "hash": "b7e379c77639fd56144947dbae84c84eb466d9c686ea81f2f013ae85421da923"
+        },
+        {
+            "type": "file",
+            "name": "public/favicon.ico",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "public/index.php",
+            "size": 543,
+            "hash": "eba77cba39695b6bd091fe5211d481f7ebb2ce2d8d26230b5a609465d0a4aff9"
+        },
+        {
+            "type": "file",
+            "name": "public/robots.txt",
+            "size": 24,
+            "hash": "e5c4b84484ee4216e9373be99380320c25dd94805f99f0a805846f087636553f"
+        },
+        {
+            "type": "file",
+            "name": "routes/api.php",
+            "size": 7341,
+            "hash": "dded5e6dd096a0c27ad7cc3d9ec55f2e17a29bf355f049be09e9d1f600c42afc"
+        },
+        {
+            "type": "file",
+            "name": "routes/console.php",
+            "size": 210,
+            "hash": "9adccc33e7dd400683e434774077c7fdb2f299c5712cedf16a43fdf56f2850fa"
+        },
+        {
+            "type": "file",
+            "name": "routes/web.php",
+            "size": 108,
+            "hash": "248c7eeeb43bb61ee4fb6603e52b44843c64f72a841d671bcd41871aab23f970"
+        },
+        {
+            "type": "folder",
+            "name": "resources/css"
+        },
+        {
+            "type": "folder",
+            "name": "resources/js"
+        },
+        {
+            "type": "folder",
+            "name": "resources/views"
+        },
+        {
+            "type": "folder",
+            "name": "storage/app"
+        },
+        {
+            "type": "folder",
+            "name": "storage/framework"
+        },
+        {
+            "type": "folder",
+            "name": "storage/logs"
+        },
+        {
+            "type": "folder",
+            "name": "tests/Feature"
+        },
+        {
+            "type": "file",
+            "name": "tests/Pest.php",
+            "size": 1584,
+            "hash": "198632917ab7761af28a3cecce6492398d666ad6955cc67bf770f0f4c50bb3aa"
+        },
+        {
+            "type": "file",
+            "name": "tests/TestCase.php",
+            "size": 142,
+            "hash": "c7c209f5579c42647c1f7b2a79ac828e8b54ac62a98442045a6e94fa2c0d0ebc"
+        },
+        {
+            "type": "folder",
+            "name": "tests/Unit"
+        },
+        {
+            "type": "folder",
+            "name": ".agents/skills/laravel-best-practices"
+        },
+        {
+            "type": "folder",
+            "name": ".agents/skills/pest-testing"
+        },
+        {
+            "type": "folder",
+            "name": ".agents/skills/tailwindcss-development"
+        },
+        {
+            "type": "folder",
+            "name": "app/Http/Controllers"
+        },
+        {
+            "type": "folder",
+            "name": "app/Http/Middleware"
+        },
+        {
+            "type": "file",
+            "name": "app/Jobs/SendAccountBlockedAlertJob.php",
+            "size": 641,
+            "hash": "a0a2a623c2caac5296daae4e6fc740b729243cca4a7b2c4bbff42f4f29846a95"
+        },
+        {
+            "type": "file",
+            "name": "app/Jobs/SendFailedLoginAlertJob.php",
+            "size": 632,
+            "hash": "be9edf08cee36eb52705a831c58b4772bee2c2c86405bcb42d3f1efdfcc9e696"
+        },
+        {
+            "type": "file",
+            "name": "app/Jobs/SendForgotPasswordOtpJob.php",
+            "size": 635,
+            "hash": "2e0809eba27c1e7fcd38b507a4ae7c8efa7d0d2766a23e450d7f2c866e4f2d48"
+        },
+        {
+            "type": "file",
+            "name": "app/Mail/AccountBlockedAlertMail.php",
+            "size": 512,
+            "hash": "b90d29d9b2cef31a61f05fde7c8b926a78e44e228563c67edf0ada99bbec7ef2"
+        },
+        {
+            "type": "file",
+            "name": "app/Mail/FailedLoginAlertMail.php",
+            "size": 511,
+            "hash": "8f8973b121cbde0495b0897797086cbe8a16f943c454dab0881dd2d229563a08"
+        },
+        {
+            "type": "file",
+            "name": "app/Mail/ForgotPasswordOtpMail.php",
+            "size": 474,
+            "hash": "9b8d30866e535eb394d26adb03c706565f749c22006995f7d6c072dbbc4cdf8f"
+        },
+        {
+            "type": "file",
+            "name": "app/Models/AttendanceAudit.php",
+            "size": 949,
+            "hash": "241d7fec206429c2894807c40a99b133c3a52917fb54aa10ed6861ac72147eb7"
+        },
+        {
+            "type": "file",
+            "name": "app/Models/AttendanceBreak.php",
+            "size": 809,
+            "hash": "13a5d1be580fc019d650edea21d9af3cba2466b28b070e3d544a9cf1ff2d8958"
+        },
+        {
+            "type": "file",
+            "name": "app/Models/AttendanceDaily.php",
+            "size": 1217,
+            "hash": "eb3c24796eafa6d7422e6714e425a8833a7ed4b1dbba3361963f0ce75024999c"
+        },
+        {
+            "type": "file",
+            "name": "app/Models/AttendanceRawLog.php",
+            "size": 965,
+            "hash": "49cb992d00efafbb84d8269a77169b1c6d3f43c5039e72788e869f79c5f5b9e1"
+        },
+        {
+            "type": "file",
+            "name": "app/Models/HrmEmployeeLeaveBalance.php",
+            "size": 779,
+            "hash": "19d3b0a32675157604dc7b30f87eae5b5175e9593664a8a0d41740ca6ed15992"
+        },
+        {
+            "type": "file",
+            "name": "app/Models/HrmEmployeeRequest.php",
+            "size": 1356,
+            "hash": "c2ac8a0a4312a9a1e87844c92b5065f39c434995db10c46f28b262cc4385f53a"
+        },
+        {
+            "type": "file",
+            "name": "app/Models/HrmLeaveType.php",
+            "size": 620,
+            "hash": "f6ceed8d8b271b27f14ed7f850fe1ea7b78d133ee53edb13b5a648a8e3480fe3"
+        },
+        {
+            "type": "file",
+            "name": "app/Models/HrmRequestApproval.php",
+            "size": 678,
+            "hash": "083be69cba89f4b00dc9a07b67643dde72fc5bc98ed53445df023cf6f82219a0"
+        },
+        {
+            "type": "file",
+            "name": "app/Models/HrmRequestDetail.php",
+            "size": 614,
+            "hash": "91b912fff46576968168b8b83dabbf91f2fb8d9e48f312f46eca1a6cb9fb87d0"
+        },
+        {
+            "type": "file",
+            "name": "app/Models/HrmRequestType.php",
+            "size": 613,
+            "hash": "d3f68d218fa7ed5e560cc1d620af75397490ec348dd4adc14eae66a34fd0e32a"
+        },
+        {
+            "type": "file",
+            "name": "app/Models/Staff.php",
+            "size": 1400,
+            "hash": "fa899d0d7ec43fc70089ff440aa3d8c0cf360737afb3e6dd37ea21715b1b12a6"
+        },
+        {
+            "type": "file",
+            "name": "app/Models/TravelReport.php",
+            "size": 545,
+            "hash": "40b8604345132669349b1037d66bd3f259ff39facfaa964b67c17d240c9fb29f"
+        },
+        {
+            "type": "file",
+            "name": "app/Models/User.php",
+            "size": 1028,
+            "hash": "505fda19ff21e74a602365f5f75f6689db3d91a012034cf4325b5514c1d78003"
+        },
+        {
+            "type": "file",
+            "name": "app/Providers/AppServiceProvider.php",
+            "size": 361,
+            "hash": "caf306ef6a25a547bbb7edd5508a39b51c365083eb6dd58378cf2242018e94c7"
+        },
+        {
+            "type": "file",
+            "name": "database/factories/UserFactory.php",
+            "size": 1044,
+            "hash": "50bdc543f1b09d1a57260be55ad0e1a68aee4b34f63e1109dc94d9bcd3080526"
+        },
+        {
+            "type": "file",
+            "name": "database/migrations/0001_01_01_000000_create_users_table.php",
+            "size": 1473,
+            "hash": "10d79883bc08ce46510f9ad8b1830b4d06d586dc56ae2c8bac3b3e491f69a90f"
+        },
+        {
+            "type": "file",
+            "name": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+            "size": 1812,
+            "hash": "7c9c712adf4091c87bf2612f4d0dccdfa1df4501553e4ac068b83d7bd5462fa5"
+        },
+        {
+            "type": "file",
+            "name": "database/migrations/0001_01_01_000001_create_cache_table.php",
+            "size": 867,
+            "hash": "2ca8398390ecef8eaf72aeac7fefce67f7de631b6f2ec7b7081c8db8953215dc"
+        },
+        {
+            "type": "file",
+            "name": "database/migrations/2026_04_17_105640_create_personal_access_tokens_table.php",
+            "size": 863,
+            "hash": "c81ecde85ea5072188c468dcaf79776728b6eb8f684d63fc0d88a4908484ca75"
+        },
+        {
+            "type": "file",
+            "name": "database/migrations/2026_04_17_112750_add_login_attempt_columns_to_users_table.php",
+            "size": 694,
+            "hash": "8c90e289535a09e35aee9b7ea82b0f0aea42d8a1c6afe72fd33da598f2e204ef"
+        },
+        {
+            "type": "file",
+            "name": "database/migrations/2026_04_24_164633_create_attendance_module_tables.php",
+            "size": 5081,
+            "hash": "2571cfa0cc60bb55b73e034a40c0451ec965df969ec21461f9ba9e8ebb8a8a54"
+        },
+        {
+            "type": "file",
+            "name": "database/migrations/2026_04_28_111018_create_hrm_request_management_tables.php",
+            "size": 4314,
+            "hash": "11a51f46acbfb0fc7a1868139d6a57587a6291bc55613ce8341e9d8fc367d6e0"
+        },
+        {
+            "type": "file",
+            "name": "database/migrations/2026_04_28_120623_create_leave_management_tables.php",
+            "size": 1993,
+            "hash": "9d99dd12bcb63c22820b738a8f67683c2ea9efa4e22aeb3f063e2c501cc3e575"
+        },
+        {
+            "type": "file",
+            "name": "database/seeders/HrmEmployeeLeaveBalanceSeeder.php",
+            "size": 1341,
+            "hash": "89780ea04383f26c132e719f6c415923dcbff15e8f7e18066178481792c29057"
+        },
+        {
+            "type": "file",
+            "name": "database/seeders/DatabaseSeeder.php",
+            "size": 620,
+            "hash": "63dbeeac8291e4b45798fd64a8b5a0e5663ef3c8cfbc30585d743f8891cfa308"
+        },
+        {
+            "type": "file",
+            "name": "database/seeders/HrmLeaveTypesSeeder.php",
+            "size": 1795,
+            "hash": "987b4c500ad3f32b692adc09e3d371278e5ad3bf4d9376022d82de5c9c0f0275"
+        },
+        {
+            "type": "file",
+            "name": "database/seeders/HrmRequestTypesSeeder.php",
+            "size": 2748,
+            "hash": "905f25537048ae4b6b62470c08443d2f40ad62ec9d9bfb12f1ad4dceed171608"
+        },
+        {
+            "type": "file",
+            "name": "resources/css/app.css",
+            "size": 390,
+            "hash": "9f49ed837fdc773b89a294d1e86dc68828ef2f774d7e797ba5f89c2a08c84760"
+        },
+        {
+            "type": "file",
+            "name": "resources/js/app.js",
+            "size": 22,
+            "hash": "cf6dab196c721f6911ff99cc4f910897f978599a2d289971a316a5fc33091f94"
+        },
+        {
+            "type": "file",
+            "name": "resources/js/bootstrap.js",
+            "size": 127,
+            "hash": "6fd9fc82e68fa915a882f4e227b9faacbe7bfd66cb953c628840e83bda6b72f4"
+        },
+        {
+            "type": "folder",
+            "name": "resources/views/emails"
+        },
+        {
+            "type": "file",
+            "name": "resources/views/welcome.blade.php",
+            "size": 82568,
+            "hash": "e50e41602994840b788471625fec54a4db6138ec971be05cfdfba40daf906c22"
+        },
+        {
+            "type": "folder",
+            "name": "storage/app/private"
+        },
+        {
+            "type": "folder",
+            "name": "storage/app/public"
+        },
+        {
+            "type": "folder",
+            "name": "storage/framework/cache"
+        },
+        {
+            "type": "folder",
+            "name": "storage/framework/sessions"
+        },
+        {
+            "type": "folder",
+            "name": "storage/framework/testing"
+        },
+        {
+            "type": "folder",
+            "name": "storage/framework/views"
+        },
+        {
+            "type": "file",
+            "name": "tests/Feature/ExampleTest.php",
+            "size": 147,
+            "hash": "9c8432a460e2d7e60a480c3e2199d0b25fb2ad5cef51a0b5e61ede384041a4b1"
+        },
+        {
+            "type": "file",
+            "name": "tests/Unit/ExampleTest.php",
+            "size": 81,
+            "hash": "d86e67e8dbb5e66fa3f63b8eaaf98529bf11786e3345e76dc2e1e1635e20ea56"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/SKILL.md",
+            "size": 8993,
+            "hash": "5632eeea810f86a3f956c422b044fbabcd42aa40c5bd100a96b3449932e8832e"
+        },
+        {
+            "type": "folder",
+            "name": ".agents/skills/laravel-best-practices/rules"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/pest-testing/SKILL.md",
+            "size": 3392,
+            "hash": "b861eb9a033920b447caeb30a7a3fa08cc4474546353fd63fd6e43bbedb21ac1"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/tailwindcss-development/SKILL.md",
+            "size": 3847,
+            "hash": "cb55f03a9c2c5deac99980f77f9b8521bf4f3a607ea959db4ba1700da9381691"
+        },
+        {
+            "type": "folder",
+            "name": "app/Http/Controllers/Api"
+        },
+        {
+            "type": "file",
+            "name": "app/Http/Controllers/Controller.php",
+            "size": 77,
+            "hash": "25d1c1ef8e6cc8a376553faacfba2b07d9dfaee9bdbb84f14f77517580e9deb1"
+        },
+        {
+            "type": "file",
+            "name": "app/Http/Middleware/InjectAuthHeader.php",
+            "size": 760,
+            "hash": "6b2c9d7df9594c88cf7861ee5a51e25888284a263e36c8e9127e75b86b2c88f0"
+        },
+        {
+            "type": "file",
+            "name": "resources/views/emails/account_blocked_alert.blade.php",
+            "size": 502,
+            "hash": "f9c5a1ee7d1b9ce50e36f7762183fdaf27dce6c2a45b19fbed027d0db8b2c454"
+        },
+        {
+            "type": "file",
+            "name": "resources/views/emails/failed_login_alert.blade.php",
+            "size": 421,
+            "hash": "2de3987d7d838c55f0e3e4b0783746d30e05849d6355d7eaffa3f98e3efdcff5"
+        },
+        {
+            "type": "file",
+            "name": "resources/views/emails/forgot_password_otp.blade.php",
+            "size": 414,
+            "hash": "e37af2f06a08756ef7cfb4432480c6154fe07b597a987ee231895b9fcdd626a5"
+        },
+        {
+            "type": "folder",
+            "name": "storage/framework/cache/data"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/advanced-queries.md",
+            "size": 3935,
+            "hash": "b96532f919138afcd29b662a0da26b29a21f2b07d35a0b0bc2ec655104f1a6a4"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/architecture.md",
+            "size": 5106,
+            "hash": "8ebfeed441a31b76c8a0b83fe1f46b979d9f97579845c45c0c68c03bd2a0e250"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/blade-views.md",
+            "size": 1210,
+            "hash": "c20d381bb00258c262342b4e2808d42012088bd6f753f5876ba63f0de862b15d"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/caching.md",
+            "size": 2434,
+            "hash": "2e21f4269c3fe249a2d182f20cff1d923f3217f085a2006b66d29c168c786957"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/collections.md",
+            "size": 1299,
+            "hash": "4b928c1ae3a9647be8d76a04a99910cd01f6f998901b952a6d83d64f6fb20e94"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/config.md",
+            "size": 1567,
+            "hash": "8d3c7f1155693b4d6fc00954a05013ef7fb02c3fc8c51079c9971e50db112935"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/db-performance.md",
+            "size": 4196,
+            "hash": "35fd91914f09f24a4b8f85e892d29fba710df7c1c2d8d88cdc772048ee2d2fbc"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/eloquent.md",
+            "size": 4007,
+            "hash": "cec20653c32b72eb0e9f6fa5d5bad324889d4945544f5f8631c6d118ed8cc182"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/error-handling.md",
+            "size": 2209,
+            "hash": "125860eb05e0ef0cadec6cbc8838b3dc31b52a0128dbb13f0d3fee973897a82c"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/events-notifications.md",
+            "size": 1668,
+            "hash": "ed731f11286673ee0fe73f691137642f428fe1244e015ab64fcd08a61c792915"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/http-client.md",
+            "size": 3663,
+            "hash": "899e83d06610df0ce30d2bed793239ee1c715c07ebaae0784ce5a5865e971b30"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/mail.md",
+            "size": 1250,
+            "hash": "bed14d99c4908ca70c58e60405edd122e79e84b9d04166918a1668b457417f1b"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/migrations.md",
+            "size": 3228,
+            "hash": "50ab20d16ad8c81cdef74ed3b9bd60c456a2a6521bd4fba2508ca1ae35fdca7d"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/queue-jobs.md",
+            "size": 3321,
+            "hash": "b9c637332b9c95c32f9c661b1a69ee4edf77fa8ab7b515b7bae4038ab23662b7"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/routing.md",
+            "size": 2172,
+            "hash": "b1dbd51a54d9cc0771b85d7eec13badf9fb19fa78f1ef1749c2bb9db00c0f311"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/scheduling.md",
+            "size": 1341,
+            "hash": "30cd6ddac1ceb3f3629422e7b1cef71e7ae7d5cb238c76f5c531636f00cb11dc"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/security.md",
+            "size": 3659,
+            "hash": "2d05fd92c7b30cff883ae36579bfe8b0af4e130214aa14721868ec28458fb00b"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/style.md",
+            "size": 4445,
+            "hash": "4100b4ea2b95e438f79a5f682ecf050fdcb28520bf8e59fcdf7729358b5e11d7"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/testing.md",
+            "size": 1543,
+            "hash": "97a5a3bbbb84e8e9a74c98b60062bc95ddb7c48ef4b84adee691c76c0e2898f2"
+        },
+        {
+            "type": "file",
+            "name": ".agents/skills/laravel-best-practices/rules/validation.md",
+            "size": 1689,
+            "hash": "dc91dee52f8463b77fc43260a45be627349868032a4adb9239b3647bc0206dfc"
+        },
+        {
+            "type": "folder",
+            "name": "app/Http/Controllers/Api/V1"
+        },
+        {
+            "type": "file",
+            "name": "app/Http/Controllers/Api/V1/AttendanceController.php",
+            "size": 26337,
+            "hash": "1531434806e63494a89ae998c88562004a378e7bff4305507521ac3da1313191"
+        },
+        {
+            "type": "file",
+            "name": "app/Http/Controllers/Api/V1/AuthController.php",
+            "size": 7221,
+            "hash": "aa648d0dbdb29cf775600a08df5bfdbf03dc569ca240dfaa037e679c8060d1f0"
+        },
+        {
+            "type": "file",
+            "name": "app/Http/Controllers/Api/V1/CompOffController.php",
+            "size": 6196,
+            "hash": "6b1abce2519b6f157d20fecdf712b249165134d1abe87ffbdf92717745733d41"
+        },
+        {
+            "type": "file",
+            "name": "app/Http/Controllers/Api/V1/EmployeeController.php",
+            "size": 2646,
+            "hash": "71d32430b69242871b6c177a321305c3b2039332a7e1af4a51464a1e8b05d76e"
+        },
+        {
+            "type": "file",
+            "name": "app/Http/Controllers/Api/V1/LeaveController.php",
+            "size": 15138,
+            "hash": "62075f42f6d7cecb971f8e600b4036548f2b7967f1372e3b70d4a87646b7ede8"
+        },
+        {
+            "type": "file",
+            "name": "app/Http/Controllers/Api/V1/OnDutyController.php",
+            "size": 6003,
+            "hash": "5c021f9600f2475ec8356111834d2d3b6adfc2baf3ded267015015896ee16bac"
+        },
+        {
+            "type": "file",
+            "name": "app/Http/Controllers/Api/V1/ProfileController.php",
+            "size": 5484,
+            "hash": "716fb5893d86feb7181c82a6a28a892dc6bad54809580ab1bc57de73c103e039"
+        },
+        {
+            "type": "file",
+            "name": "app/Http/Controllers/Api/V1/RegularizationController.php",
+            "size": 6893,
+            "hash": "999ba7b16e443a2088d237f74b59a253e4ff2d8e790c034c3ead3b77f56e5340"
+        },
+        {
+            "type": "file",
+            "name": "app/Http/Controllers/Api/V1/WorkFromHomeController.php",
+            "size": 7913,
+            "hash": "9058f9edc1bc8ae229db106b7716e051c5daa19a8d2712d6dbe6055c3c9a7422"
+        }
+    ]
+}

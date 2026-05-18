@@ -1247,6 +1247,7 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
       }
 </script>
 
+<script src="<?php echo base_url('assets/js/leave_module.js'); ?>"></script>
 <script src="<?php echo base_url('assets/js/report_module.js'); ?>"></script>
 <script src="<?php echo base_url('assets/js/expense_module.js'); ?>"></script>
 <script src="<?php echo base_url('assets/js/asset_module.js'); ?>"></script>

@@ -5,26 +5,65 @@
       <div class="fg2">
             <div class="form-group">
                   <label>Leave Type</label>
-                  <select class="form-control">
+                  <select class="form-control" name="leave_type" id="leave_type" onchange="handleLeaveTypeChange()">
                         <option value="">Select</option>
-                        <option>Casual or Sick Leave</option>
-                        <option>Maternity Leave</option>
-                        <option>Compensatory Leave</option>
-                        <option>LOP</option>
-                        <option>Admin Leave</option>
+                        <?php if (!empty($leave_types) && is_array($leave_types)) : ?>
+                              <?php foreach ($leave_types as $type) : ?>
+                                    <option value="<?php echo html_escape($type['code']); ?>"><?php echo html_escape($type['name']); ?></option>
+                              <?php endforeach; ?>
+                        <?php endif; ?>
                   </select>
             </div>
-            <div class="form-group">
-                  <label>No. of Days</label>
-                  <input type="number" class="form-control" placeholder="e.g. 2" min="1" />
+      </div>
+
+      <div id="leave-base-fields" style="display:none;">
+            <div class="fg2">
+                  <div class="form-group"><label>From Date</label><input type="date" id="leave_from_date" name="from_date" class="form-control" value="<?php echo date('Y-m-d'); ?>" onchange="updateLeaveDays()" /></div>
+                  <div class="form-group"><label>To Date</label><input type="date" id="leave_to_date" name="to_date" class="form-control" value="<?php echo date('Y-m-d'); ?>" onchange="updateLeaveDays()" /></div>
             </div>
+            <div class="fg2">
+                  <div class="form-group"><label>No. of Days</label><input type="text" id="leave_days_display" class="form-control" readonly placeholder="Auto-calculated" /></div>
+                  <div class="form-group">
+                        <label>Duration</label>
+                        <div class="segmented-control" id="leaveDurationControl">
+                              <button type="button" class="seg-btn active" onclick="setLeaveDuration(this,'Full Day')">Full Day</button>
+                              <button type="button" class="seg-btn" onclick="setLeaveDuration(this,'First Half')">First Half</button>
+                              <button type="button" class="seg-btn" onclick="setLeaveDuration(this,'Second Half')">Second Half</button>
+                        </div>
+                        <input type="hidden" id="leave_duration" name="duration" value="Full Day" />
+                  </div>
+            </div>
+            <div class="form-group"><label>Reason</label><textarea class="form-control" id="leave_reason" name="reason" rows="3" placeholder="Enter reason for leave"></textarea></div>
+            <div class="form-group"><label>Attachment <small>(optional)</small></label><input type="file" id="leave_attachment" class="form-control" /></div>
       </div>
-      <div class="fg2">
-            <div class="form-group"><label>From Date</label><input type="date" class="form-control" value="<?php echo date('Y-m-d'); ?>" /></div>
-            <div class="form-group"><label>To Date</label><input type="date" class="form-control" value="<?php echo date('Y-m-d'); ?>" /></div>
+
+      <div id="leave-comp-off-fields" style="display:none;">
+            <div class="fg2">
+                  <div class="form-group"><label>Worked Date</label><input type="date" id="comp_off_worked_date" class="form-control" value="<?php echo date('Y-m-d'); ?>" onchange="updateCompOffDays()" /></div>
+                  <div class="form-group"><label>Comp Off Date</label><input type="date" id="comp_off_date" class="form-control" value="<?php echo date('Y-m-d'); ?>" onchange="updateCompOffDays()" /></div>
+            </div>
+            <div class="form-group"><label>Additional Notes</label><textarea class="form-control" id="comp_off_notes" rows="3" placeholder="Enter additional notes"></textarea></div>
       </div>
-      <div class="form-group"><label>Reason</label><textarea class="form-control" rows="3" placeholder="Enter reason for leave"></textarea></div>
-      <div class="form-group"><label>Attachment <small>(optional)</small></label><input type="file" class="form-control" /></div>
+
+      <div id="leave-maternity-fields" style="display:none;">
+            <div class="fg2">
+                  <div class="form-group"><label>Expected Delivery Date</label><input type="date" id="maternity_delivery_date" class="form-control" value="<?php echo date('Y-m-d'); ?>" /></div>
+                  <div class="form-group"><label>Start Date</label><input type="date" id="maternity_start_date" class="form-control" value="<?php echo date('Y-m-d'); ?>" onchange="updateMaternityDuration()" /></div>
+            </div>
+            <div class="fg2">
+                  <div class="form-group"><label>End Date</label><input type="date" id="maternity_end_date" class="form-control" value="<?php echo date('Y-m-d'); ?>" onchange="updateMaternityDuration()" /></div>
+                  <div class="form-group"><label>Total Leave Duration</label><input type="text" id="maternity_total_days" class="form-control" readonly placeholder="Auto-calculated" /></div>
+            </div>
+            <div class="form-group"><label>Upload Medical Certificate</label><input type="file" id="maternity_medical_certificate" class="form-control" /></div>
+            <div class="form-group"><label>Alternate Contact No</label><input type="tel" id="maternity_alt_contact" class="form-control" placeholder="Alternate contact number" /></div>
+            <div class="form-group"><label>Emergency Contact No</label><input type="tel" id="maternity_emergency_contact" class="form-control" placeholder="Emergency contact number" /></div>
+            <div class="form-group"><label>Out of Office Consignee</label><input type="text" id="maternity_consignee" class="form-control" placeholder="Out of office consignee" /></div>
+            <div class="form-group"><label>Work Handover Plan</label><textarea class="form-control" id="maternity_handover_plan" rows="3" placeholder="Describe the handover plan"></textarea></div>
+            <div class="form-group"><label>Additional Notes</label><textarea class="form-control" id="maternity_notes" rows="3" placeholder="Add any additional notes"></textarea></div>
+            <div class="form-group"><small><strong>Note:</strong> Ensure all documents are uploaded as per company policy. This request will be sent to HR for approval.</small></div>
+      </div>
+
+      <input type="hidden" id="leave_days" name="no_of_days" value="" />
       <div class="rform-actions">
             <button class="btn-cancel" onclick="closeForm()">Cancel</button>
             <button class="btn-submit" onclick="submitLeaveRequest()">Submit Request</button>
@@ -214,4 +253,3 @@
       </div>
 </div>
 
-<script src="<?php echo base_url('assets/js/leave_module.js'); ?>"></script>

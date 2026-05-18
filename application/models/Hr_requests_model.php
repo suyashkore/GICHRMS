@@ -241,6 +241,23 @@ class Hr_requests_model extends App_Model
         ];
     }
 
+    public function get_active_leave_types()
+    {
+        $oldPrefix = $this->db->dbprefix;
+        $this->db->dbprefix = '';
+
+        $leaveTypes = $this->db
+            ->select('name, code')
+            ->where('is_active', 1)
+            ->order_by('name', 'ASC')
+            ->get('hrm_leave_types')
+            ->result_array();
+
+        $this->db->dbprefix = $oldPrefix;
+
+        return $leaveTypes;
+    }
+
     private function is_week_off($date)
     {
         $dayOfWeek = (int) date('w', strtotime($date));

@@ -1,0 +1,120 @@
+[28-Apr-2026 16:31:53 UTC] PHP Fatal error:  Uncaught TypeError: Illuminate\Foundation\Configuration\Middleware::append(): Argument #1 ($middleware) must be of type array|string, Closure given, called in /home/hrms2os9q/public_html/mobile/bootstrap/app.php on line 15 and defined in /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/Middleware.php:185
+Stack trace:
+#0 /home/hrms2os9q/public_html/mobile/bootstrap/app.php(15): Illuminate\Foundation\Configuration\Middleware->append(Object(Closure))
+#1 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/ApplicationBuilder.php(281): {closure}(Object(Illuminate\Foundation\Configuration\Middleware))
+#2 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1618): Illuminate\Foundation\Configuration\ApplicationBuilder->Illuminate\Foundation\Configuration\{closure}(Object(Illuminate\Foundation\Http\Kernel), Object(Illuminate\Foundation\Application))
+#3 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1556): Illuminate\Container\Container->fireCallbackArray(Object(Illuminate\Foundation\Http\Kernel), Array)
+#4 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1542): Illuminate\Container\Container->fireAfterResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#5 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(951): Illuminate\Container\Container->fireResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#6 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(864): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1218): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/hrms2os9q/public_html/mobile/index.php(20): Illuminate\Foundation\Application->handleRequest(Object(Illuminate\Http\Request))
+#11 {main}
+  thrown in /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/Middleware.php on line 185
+[28-Apr-2026 16:32:04 UTC] PHP Fatal error:  Uncaught TypeError: Illuminate\Foundation\Configuration\Middleware::append(): Argument #1 ($middleware) must be of type array|string, Closure given, called in /home/hrms2os9q/public_html/mobile/bootstrap/app.php on line 15 and defined in /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/Middleware.php:185
+Stack trace:
+#0 /home/hrms2os9q/public_html/mobile/bootstrap/app.php(15): Illuminate\Foundation\Configuration\Middleware->append(Object(Closure))
+#1 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/ApplicationBuilder.php(281): {closure}(Object(Illuminate\Foundation\Configuration\Middleware))
+#2 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1618): Illuminate\Foundation\Configuration\ApplicationBuilder->Illuminate\Foundation\Configuration\{closure}(Object(Illuminate\Foundation\Http\Kernel), Object(Illuminate\Foundation\Application))
+#3 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1556): Illuminate\Container\Container->fireCallbackArray(Object(Illuminate\Foundation\Http\Kernel), Array)
+#4 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1542): Illuminate\Container\Container->fireAfterResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#5 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(951): Illuminate\Container\Container->fireResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#6 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(864): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1218): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/hrms2os9q/public_html/mobile/index.php(20): Illuminate\Foundation\Application->handleRequest(Object(Illuminate\Http\Request))
+#11 {main}
+  thrown in /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/Middleware.php on line 185
+[28-Apr-2026 16:32:22 UTC] PHP Fatal error:  Uncaught TypeError: Illuminate\Foundation\Configuration\Middleware::append(): Argument #1 ($middleware) must be of type array|string, Closure given, called in /home/hrms2os9q/public_html/mobile/bootstrap/app.php on line 15 and defined in /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/Middleware.php:185
+Stack trace:
+#0 /home/hrms2os9q/public_html/mobile/bootstrap/app.php(15): Illuminate\Foundation\Configuration\Middleware->append(Object(Closure))
+#1 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/ApplicationBuilder.php(281): {closure}(Object(Illuminate\Foundation\Configuration\Middleware))
+#2 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1618): Illuminate\Foundation\Configuration\ApplicationBuilder->Illuminate\Foundation\Configuration\{closure}(Object(Illuminate\Foundation\Http\Kernel), Object(Illuminate\Foundation\Application))
+#3 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1556): Illuminate\Container\Container->fireCallbackArray(Object(Illuminate\Foundation\Http\Kernel), Array)
+#4 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1542): Illuminate\Container\Container->fireAfterResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#5 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(951): Illuminate\Container\Container->fireResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#6 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(864): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1218): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/hrms2os9q/public_html/mobile/index.php(20): Illuminate\Foundation\Application->handleRequest(Object(Illuminate\Http\Request))
+#11 {main}
+  thrown in /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/Middleware.php on line 185
+[28-Apr-2026 16:32:45 UTC] PHP Fatal error:  Uncaught TypeError: Illuminate\Foundation\Configuration\Middleware::append(): Argument #1 ($middleware) must be of type array|string, Closure given, called in /home/hrms2os9q/public_html/mobile/bootstrap/app.php on line 15 and defined in /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/Middleware.php:185
+Stack trace:
+#0 /home/hrms2os9q/public_html/mobile/bootstrap/app.php(15): Illuminate\Foundation\Configuration\Middleware->append(Object(Closure))
+#1 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/ApplicationBuilder.php(281): {closure}(Object(Illuminate\Foundation\Configuration\Middleware))
+#2 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1618): Illuminate\Foundation\Configuration\ApplicationBuilder->Illuminate\Foundation\Configuration\{closure}(Object(Illuminate\Foundation\Http\Kernel), Object(Illuminate\Foundation\Application))
+#3 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1556): Illuminate\Container\Container->fireCallbackArray(Object(Illuminate\Foundation\Http\Kernel), Array)
+#4 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1542): Illuminate\Container\Container->fireAfterResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#5 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(951): Illuminate\Container\Container->fireResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#6 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(864): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1218): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/hrms2os9q/public_html/mobile/index.php(20): Illuminate\Foundation\Application->handleRequest(Object(Illuminate\Http\Request))
+#11 {main}
+  thrown in /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/Middleware.php on line 185
+[28-Apr-2026 16:33:06 UTC] PHP Fatal error:  Uncaught TypeError: Illuminate\Foundation\Configuration\Middleware::append(): Argument #1 ($middleware) must be of type array|string, Closure given, called in /home/hrms2os9q/public_html/mobile/bootstrap/app.php on line 15 and defined in /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/Middleware.php:185
+Stack trace:
+#0 /home/hrms2os9q/public_html/mobile/bootstrap/app.php(15): Illuminate\Foundation\Configuration\Middleware->append(Object(Closure))
+#1 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/ApplicationBuilder.php(281): {closure}(Object(Illuminate\Foundation\Configuration\Middleware))
+#2 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1618): Illuminate\Foundation\Configuration\ApplicationBuilder->Illuminate\Foundation\Configuration\{closure}(Object(Illuminate\Foundation\Http\Kernel), Object(Illuminate\Foundation\Application))
+#3 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1556): Illuminate\Container\Container->fireCallbackArray(Object(Illuminate\Foundation\Http\Kernel), Array)
+#4 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1542): Illuminate\Container\Container->fireAfterResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#5 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(951): Illuminate\Container\Container->fireResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#6 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(864): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1218): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/hrms2os9q/public_html/mobile/index.php(20): Illuminate\Foundation\Application->handleRequest(Object(Illuminate\Http\Request))
+#11 {main}
+  thrown in /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/Middleware.php on line 185
+[28-Apr-2026 16:33:15 UTC] PHP Fatal error:  Uncaught TypeError: Illuminate\Foundation\Configuration\Middleware::append(): Argument #1 ($middleware) must be of type array|string, Closure given, called in /home/hrms2os9q/public_html/mobile/bootstrap/app.php on line 15 and defined in /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/Middleware.php:185
+Stack trace:
+#0 /home/hrms2os9q/public_html/mobile/bootstrap/app.php(15): Illuminate\Foundation\Configuration\Middleware->append(Object(Closure))
+#1 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/ApplicationBuilder.php(281): {closure}(Object(Illuminate\Foundation\Configuration\Middleware))
+#2 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1618): Illuminate\Foundation\Configuration\ApplicationBuilder->Illuminate\Foundation\Configuration\{closure}(Object(Illuminate\Foundation\Http\Kernel), Object(Illuminate\Foundation\Application))
+#3 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1556): Illuminate\Container\Container->fireCallbackArray(Object(Illuminate\Foundation\Http\Kernel), Array)
+#4 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1542): Illuminate\Container\Container->fireAfterResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#5 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(951): Illuminate\Container\Container->fireResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#6 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(864): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1218): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/hrms2os9q/public_html/mobile/index.php(20): Illuminate\Foundation\Application->handleRequest(Object(Illuminate\Http\Request))
+#11 {main}
+  thrown in /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/Middleware.php on line 185
+[28-Apr-2026 16:34:37 UTC] PHP Fatal error:  Uncaught TypeError: Illuminate\Foundation\Configuration\Middleware::append(): Argument #1 ($middleware) must be of type array|string, Closure given, called in /home/hrms2os9q/public_html/mobile/bootstrap/app.php on line 16 and defined in /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/Middleware.php:185
+Stack trace:
+#0 /home/hrms2os9q/public_html/mobile/bootstrap/app.php(16): Illuminate\Foundation\Configuration\Middleware->append(Object(Closure))
+#1 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/ApplicationBuilder.php(281): {closure}(Object(Illuminate\Foundation\Configuration\Middleware))
+#2 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1618): Illuminate\Foundation\Configuration\ApplicationBuilder->Illuminate\Foundation\Configuration\{closure}(Object(Illuminate\Foundation\Http\Kernel), Object(Illuminate\Foundation\Application))
+#3 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1556): Illuminate\Container\Container->fireCallbackArray(Object(Illuminate\Foundation\Http\Kernel), Array)
+#4 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1542): Illuminate\Container\Container->fireAfterResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#5 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(951): Illuminate\Container\Container->fireResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#6 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(864): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1218): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/hrms2os9q/public_html/mobile/index.php(20): Illuminate\Foundation\Application->handleRequest(Object(Illuminate\Http\Request))
+#11 {main}
+  thrown in /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/Middleware.php on line 185
+[28-Apr-2026 16:34:57 UTC] PHP Fatal error:  Uncaught TypeError: Illuminate\Foundation\Configuration\Middleware::append(): Argument #1 ($middleware) must be of type array|string, Closure given, called in /home/hrms2os9q/public_html/mobile/bootstrap/app.php on line 19 and defined in /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/Middleware.php:185
+Stack trace:
+#0 /home/hrms2os9q/public_html/mobile/bootstrap/app.php(19): Illuminate\Foundation\Configuration\Middleware->append(Object(Closure))
+#1 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/ApplicationBuilder.php(281): {closure}(Object(Illuminate\Foundation\Configuration\Middleware))
+#2 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1618): Illuminate\Foundation\Configuration\ApplicationBuilder->Illuminate\Foundation\Configuration\{closure}(Object(Illuminate\Foundation\Http\Kernel), Object(Illuminate\Foundation\Application))
+#3 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1556): Illuminate\Container\Container->fireCallbackArray(Object(Illuminate\Foundation\Http\Kernel), Array)
+#4 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(1542): Illuminate\Container\Container->fireAfterResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#5 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(951): Illuminate\Container\Container->fireResolvingCallbacks('Illuminate\\Cont...', Object(Illuminate\Foundation\Http\Kernel))
+#6 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Container/Container.php(864): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1218): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/hrms2os9q/public_html/mobile/index.php(20): Illuminate\Foundation\Application->handleRequest(Object(Illuminate\Http\Request))
+#11 {main}
+  thrown in /home/hrms2os9q/public_html/mobile/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/Middleware.php on line 185

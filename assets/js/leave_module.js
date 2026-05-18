@@ -1,30 +1,80 @@
 // Leave Module JavaScript
 
 function submitLeaveRequest() {
-      // Get form data
-      var leaveType = document.querySelector('#form-Leave select').value;
-      var noOfDays = document.querySelector('#form-Leave input[type="number"]').value;
-      var fromDate = document.querySelector('#form-Leave input[type="date"]:nth-of-type(1)').value;
-      var toDate = document.querySelector('#form-Leave input[type="date"]:nth-of-type(2)').value;
-      var reason = document.querySelector('#form-Leave textarea').value;
-      var attachment = document.querySelector('#form-Leave input[type="file"]').files[0];
-
-      // Validate
-      if (!leaveType || !noOfDays || !fromDate || !toDate || !reason) {
-            alert('Please fill all required fields.');
+      var leaveType = document.getElementById('leave_type').value;
+      if (!leaveType) {
+            alert('Please select a leave type.');
             return;
       }
 
-      // AJAX submit
       var formData = new FormData();
       formData.append('leave_type', leaveType);
-      formData.append('no_of_days', noOfDays);
-      formData.append('from_date', fromDate);
-      formData.append('to_date', toDate);
-      formData.append('reason', reason);
-      if (attachment) formData.append('attachment', attachment);
+      formData.append('duration', document.getElementById('leave_duration').value || 'Full Day');
+      formData.append('no_of_days', document.getElementById('leave_days').value || '');
 
-      fetch(base_url + 'admin/hr/submit_leave_request
+      if (['CSL', 'LOP', 'ADL'].includes(leaveType)) {
+            var fromDate = document.getElementById('leave_from_date').value;
+            var toDate = document.getElementById('leave_to_date').value;
+            var reason = document.getElementById('leave_reason').value;
+            var attachment = document.getElementById('leave_attachment').files[0];
+
+            if (!fromDate || !toDate || !reason) {
+                  alert('Please fill all required fields.');
+                  return;
+            }
+
+            formData.append('from_date', fromDate);
+            formData.append('to_date', toDate);
+            formData.append('reason', reason);
+            if (attachment) {
+                  formData.append('attachment', attachment);
+            }
+      } else if (leaveType === 'CPL') {
+            var workedDate = document.getElementById('comp_off_worked_date').value;
+            var compOffDate = document.getElementById('comp_off_date').value;
+            var notes = document.getElementById('comp_off_notes').value;
+
+            if (!workedDate || !compOffDate || !notes) {
+                  alert('Please fill all required fields.');
+                  return;
+            }
+
+            formData.append('from_date', workedDate);
+            formData.append('to_date', compOffDate);
+            formData.append('reason', notes);
+      } else if (leaveType === 'MEL') {
+            var deliveryDate = document.getElementById('maternity_delivery_date').value;
+            var startDate = document.getElementById('maternity_start_date').value;
+            var endDate = document.getElementById('maternity_end_date').value;
+            var medicalCertificate = document.getElementById('maternity_medical_certificate').files[0];
+            var alternateContact = document.getElementById('maternity_alt_contact').value;
+            var emergencyContact = document.getElementById('maternity_emergency_contact').value;
+            var consignee = document.getElementById('maternity_consignee').value;
+            var handoverPlan = document.getElementById('maternity_handover_plan').value;
+            var notes = document.getElementById('maternity_notes').value;
+
+            if (!deliveryDate || !startDate || !endDate || !alternateContact || !emergencyContact || !consignee || !handoverPlan || !notes) {
+                  alert('Please fill all required fields.');
+                  return;
+            }
+
+            formData.append('expected_delivery_date', deliveryDate);
+            formData.append('from_date', startDate);
+            formData.append('to_date', endDate);
+            formData.append('alternate_contact_no', alternateContact);
+            formData.append('emergency_contact_no', emergencyContact);
+            formData.append('out_of_office_consignee', consignee);
+            formData.append('work_handover_plan', handoverPlan);
+            formData.append('reason', notes);
+            if (medicalCertificate) {
+                  formData.append('medical_certificate', medicalCertificate);
+            }
+      } else {
+            alert('This leave type is not supported yet.');
+            return;
+      }
+
+      fetch(base_url + 'admin/hr/submit_leave_request', {
             method: 'POST',
             body: formData
       })
@@ -41,6 +91,119 @@ function submitLeaveRequest() {
             console.error('Error:', error);
             alert('An error occurred while submitting the request.');
       });
+}
+
+function handleLeaveTypeChange() {
+      var leaveType = document.getElementById('leave_type').value;
+      var baseFields = document.getElementById('leave-base-fields');
+      var compOffFields = document.getElementById('leave-comp-off-fields');
+      var maternityFields = document.getElementById('leave-maternity-fields');
+
+      baseFields.style.display = 'none';
+      compOffFields.style.display = 'none';
+      maternityFields.style.display = 'none';
+
+      if (['CSL', 'LOP', 'ADL'].includes(leaveType)) {
+            baseFields.style.display = 'block';
+            updateLeaveDays();
+      } else if (leaveType === 'CPL') {
+            compOffFields.style.display = 'block';
+            updateCompOffDays();
+      } else if (leaveType === 'MEL') {
+            maternityFields.style.display = 'block';
+            updateMaternityDuration();
+      }
+}
+
+function setLeaveDuration(button, value) {
+      var buttons = document.querySelectorAll('#leaveDurationControl .seg-btn');
+      buttons.forEach(function(btn) {
+            btn.classList.remove('active');
+      });
+      button.classList.add('active');
+      document.getElementById('leave_duration').value = value;
+      updateLeaveDays();
+}
+
+function updateLeaveDays() {
+      var fromDate = document.getElementById('leave_from_date').value;
+      var toDate = document.getElementById('leave_to_date').value;
+      var duration = document.getElementById('leave_duration').value;
+      var leaveDaysInput = document.getElementById('leave_days');
+      var leaveDaysDisplay = document.getElementById('leave_days_display');
+
+      if (!fromDate || !toDate) {
+            leaveDaysInput.value = '';
+            if (leaveDaysDisplay) leaveDaysDisplay.value = '';
+            return;
+      }
+
+      var start = new Date(fromDate);
+      var end = new Date(toDate);
+      if (end < start) {
+            leaveDaysInput.value = '';
+            if (leaveDaysDisplay) leaveDaysDisplay.value = '';
+            return;
+      }
+
+      var diffDays = Math.round((end - start) / (1000 * 60 * 60 * 24)) + 1;
+      var days = diffDays;
+      if (duration === 'First Half' || duration === 'Second Half') {
+            if (diffDays === 1) {
+                  days = 0.5;
+            } else {
+                  days = diffDays - 0.5;
+            }
+      }
+
+      leaveDaysInput.value = days;
+      if (leaveDaysDisplay) leaveDaysDisplay.value = days;
+}
+
+function updateCompOffDays() {
+      var workedDate = document.getElementById('comp_off_worked_date').value;
+      var compOffDate = document.getElementById('comp_off_date').value;
+      var leaveDaysInput = document.getElementById('leave_days');
+
+      if (!workedDate || !compOffDate) {
+            leaveDaysInput.value = '';
+            return;
+      }
+
+      var start = new Date(workedDate);
+      var end = new Date(compOffDate);
+      if (end < start) {
+            leaveDaysInput.value = '';
+            return;
+      }
+
+      var diffDays = Math.round((end - start) / (1000 * 60 * 60 * 24)) + 1;
+      leaveDaysInput.value = diffDays;
+}
+
+function updateMaternityDuration() {
+      var startDate = document.getElementById('maternity_start_date').value;
+      var endDate = document.getElementById('maternity_end_date').value;
+      var totalDaysInput = document.getElementById('maternity_total_days');
+      var leaveDaysInput = document.getElementById('leave_days');
+
+      if (!startDate || !endDate) {
+            if (totalDaysInput) totalDaysInput.value = '';
+            leaveDaysInput.value = '';
+            return;
+      }
+
+      var start = new Date(startDate);
+      var end = new Date(endDate);
+      if (end < start) {
+            if (totalDaysInput) totalDaysInput.value = '';
+            leaveDaysInput.value = '';
+            return;
+      }
+
+      var diffDays = Math.round((end - start) / (1000 * 60 * 60 * 24)) + 1;
+      if (totalDaysInput) totalDaysInput.value = diffDays;
+      leaveDaysInput.value = diffDays;
 }
 
 function submitRegularisationRequest() {

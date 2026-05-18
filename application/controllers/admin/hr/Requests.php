@@ -30,7 +30,8 @@ class Requests extends AdminController
 
     public function load_leave_forms()
     {
-        $this->load->view('admin/hr/requests/leave_forms');
+        $data['leave_types'] = $this->hr_requests_model->get_active_leave_types();
+        $this->load->view('admin/hr/requests/leave_forms', $data);
     }
 
     public function load_attendance_forms()
