@@ -9,7 +9,7 @@
                         <option value="">Select</option>
                         <?php if (!empty($leave_types) && is_array($leave_types)) : ?>
                               <?php foreach ($leave_types as $type) : ?>
-                                    <option value="<?php echo html_escape($type['code']); ?>"><?php echo html_escape($type['name']); ?></option>
+                                    <option value="<?php echo html_escape($type['id']); ?>" data-code="<?php echo html_escape($type['code']); ?>"><?php echo html_escape($type['name']); ?></option>
                               <?php endforeach; ?>
                         <?php endif; ?>
                   </select>
@@ -34,6 +34,10 @@
                   </div>
             </div>
             <div class="form-group"><label>Reason</label><textarea class="form-control" id="leave_reason" name="reason" rows="3" placeholder="Enter reason for leave"></textarea></div>
+            <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="notify_team" />
+                  <label class="form-check-label" for="notify_team">Notify Team</label>
+            </div>
             <div class="form-group"><label>Attachment <small>(optional)</small></label><input type="file" id="leave_attachment" class="form-control" /></div>
       </div>
 

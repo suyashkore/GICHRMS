@@ -247,7 +247,7 @@ class Hr_requests_model extends App_Model
         $this->db->dbprefix = '';
 
         $leaveTypes = $this->db
-            ->select('name, code')
+            ->select('id, name, code')
             ->where('is_active', 1)
             ->order_by('name', 'ASC')
             ->get('hrm_leave_types')

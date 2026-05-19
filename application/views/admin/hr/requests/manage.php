@@ -1034,6 +1034,9 @@ $next_month = date('Y-m', strtotime($current_month . ' +1 month'));
 
 <script>
       var base_url = '<?php echo base_url(); ?>';
+      var laravelApiBase = base_url + 'mobile/api/v1/';
+      var laravelWebBase = base_url + 'mobile/';
+      var ciStaffEmail = <?php echo json_encode(isset($current_user->email) ? $current_user->email : ''); ?>;
       var openCardId  = null;
       var activeOption = null;
 

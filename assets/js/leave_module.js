@@ -1,35 +1,132 @@
 // Leave Module JavaScript
 
 function submitLeaveRequest() {
-      var leaveType = document.getElementById('leave_type').value;
-      if (!leaveType) {
+      var leaveTypeId = document.getElementById('leave_type').value;
+      var leaveTypeOption = document.getElementById('leave_type').selectedOptions[0];
+      var leaveTypeCode = leaveTypeOption ? leaveTypeOption.dataset.code : '';
+      if (!leaveTypeId) {
             alert('Please select a leave type.');
             return;
       }
 
-      var formData = new FormData();
-      formData.append('leave_type', leaveType);
-      formData.append('duration', document.getElementById('leave_duration').value || 'Full Day');
-      formData.append('no_of_days', document.getElementById('leave_days').value || '');
+      function mapDurationToApiType(duration) {
+            if (duration === 'First Half') return 'first_half';
+            if (duration === 'Second Half') return 'second_half';
+            return 'full_day';
+      }
 
-      if (['CSL', 'LOP', 'ADL'].includes(leaveType)) {
+      if (['CSL', 'LOP', 'ADL', 'CPL', 'MEL'].includes(leaveTypeCode)) {
             var fromDate = document.getElementById('leave_from_date').value;
             var toDate = document.getElementById('leave_to_date').value;
             var reason = document.getElementById('leave_reason').value;
-            var attachment = document.getElementById('leave_attachment').files[0];
+            var notifyTeam = document.getElementById('notify_team').checked;
 
-            if (!fromDate || !toDate || !reason) {
-                  alert('Please fill all required fields.');
+            if (['CSL', 'LOP', 'ADL'].includes(leaveTypeCode)) {
+                  if (!fromDate || !toDate || !reason) {
+                        alert('Please fill all required fields.');
+                        return;
+                  }
+            }
+
+            if (!ciStaffEmail) {
+                  alert('Unable to determine current user email for API submission.');
                   return;
             }
 
-            formData.append('from_date', fromDate);
-            formData.append('to_date', toDate);
-            formData.append('reason', reason);
-            if (attachment) {
-                  formData.append('attachment', attachment);
+            var formData = new FormData();
+            formData.append('leave_type_id', leaveTypeId);
+            formData.append('staff_email', ciStaffEmail);
+            formData.append('type', mapDurationToApiType(document.getElementById('leave_duration').value || 'Full Day'));
+            formData.append('notify_team', notifyTeam ? '1' : '0');
+
+            if (leaveTypeCode === 'CSL' || leaveTypeCode === 'LOP' || leaveTypeCode === 'ADL') {
+                  formData.append('from_date', fromDate);
+                  formData.append('to_date', toDate);
+                  formData.append('reason', reason);
             }
-      } else if (leaveType === 'CPL') {
+
+            if (leaveTypeCode === 'CPL') {
+                  var workedDate = document.getElementById('comp_off_worked_date').value;
+                  var compOffDate = document.getElementById('comp_off_date').value;
+                  var notes = document.getElementById('comp_off_notes').value;
+
+                  if (!workedDate || !compOffDate || !notes) {
+                        alert('Please fill all required fields.');
+                        return;
+                  }
+
+                  // Use comp-off date for the actual leave day; worked date is metadata.
+                  formData.append('from_date', compOffDate);
+                  formData.append('to_date', compOffDate);
+                  formData.append('reason', notes);
+                  formData.append('comp_off_notes', notes);
+                  formData.append('worked_date', workedDate);
+            }
+
+            if (leaveTypeCode === 'MEL') {
+                  var deliveryDate = document.getElementById('maternity_delivery_date').value;
+                  var startDate = document.getElementById('maternity_start_date').value;
+                  var endDate = document.getElementById('maternity_end_date').value;
+                  var medicalCertificate = document.getElementById('maternity_medical_certificate').files[0];
+                  var alternateContact = document.getElementById('maternity_alt_contact').value;
+                  var emergencyContact = document.getElementById('maternity_emergency_contact').value;
+                  var consignee = document.getElementById('maternity_consignee').value;
+                  var handoverPlan = document.getElementById('maternity_handover_plan').value;
+                  var notes = document.getElementById('maternity_notes').value;
+
+                  if (!deliveryDate || !startDate || !endDate || !alternateContact || !emergencyContact || !consignee || !handoverPlan || !notes) {
+                        alert('Please fill all required fields.');
+                        return;
+                  }
+
+                  formData.append('from_date', startDate);
+                  formData.append('to_date', endDate);
+                  formData.append('expected_delivery_date', deliveryDate);
+                  formData.append('alternate_contact_no', alternateContact);
+                  formData.append('emergency_contact_no', emergencyContact);
+                  formData.append('out_of_office_consignee', consignee);
+                  formData.append('work_handover_plan', handoverPlan);
+                  formData.append('reason', notes);
+                  formData.append('maternity_notes', notes);
+                  if (medicalCertificate) {
+                        formData.append('medical_certificate', medicalCertificate);
+                  }
+            }
+
+            var generalAttachment = document.getElementById('leave_attachment').files[0];
+            if (generalAttachment) {
+                  formData.append('attachment', generalAttachment);
+            }
+
+            fetch(laravelWebBase + 'leave/apply-ci-web', {
+                  method: 'POST',
+                  headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                  },
+                  body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                  if (data.success || data.status) {
+                        alert('Leave request submitted successfully!');
+                        closeForm();
+                  } else {
+                        alert('Error: ' + (data.message || 'Unable to submit request'));
+                  }
+            })
+            .catch(error => {
+                  console.error('Error:', error);
+                  alert('An error occurred while submitting the request.');
+            });
+            return;
+      }
+
+      var formData = new FormData();
+      formData.append('leave_type', leaveTypeCode || leaveTypeId);
+      formData.append('duration', document.getElementById('leave_duration').value || 'Full Day');
+      formData.append('no_of_days', document.getElementById('leave_days').value || '');
+
+      if (leaveTypeCode === 'CPL') {
             var workedDate = document.getElementById('comp_off_worked_date').value;
             var compOffDate = document.getElementById('comp_off_date').value;
             var notes = document.getElementById('comp_off_notes').value;
@@ -42,7 +139,7 @@ function submitLeaveRequest() {
             formData.append('from_date', workedDate);
             formData.append('to_date', compOffDate);
             formData.append('reason', notes);
-      } else if (leaveType === 'MEL') {
+      } else if (leaveTypeCode === 'MEL') {
             var deliveryDate = document.getElementById('maternity_delivery_date').value;
             var startDate = document.getElementById('maternity_start_date').value;
             var endDate = document.getElementById('maternity_end_date').value;
@@ -94,7 +191,8 @@ function submitLeaveRequest() {
 }
 
 function handleLeaveTypeChange() {
-      var leaveType = document.getElementById('leave_type').value;
+      var leaveTypeOption = document.getElementById('leave_type').selectedOptions[0];
+      var leaveTypeCode = leaveTypeOption ? leaveTypeOption.dataset.code : '';
       var baseFields = document.getElementById('leave-base-fields');
       var compOffFields = document.getElementById('leave-comp-off-fields');
       var maternityFields = document.getElementById('leave-maternity-fields');
@@ -103,13 +201,13 @@ function handleLeaveTypeChange() {
       compOffFields.style.display = 'none';
       maternityFields.style.display = 'none';
 
-      if (['CSL', 'LOP', 'ADL'].includes(leaveType)) {
+      if (['CSL', 'LOP', 'ADL'].includes(leaveTypeCode)) {
             baseFields.style.display = 'block';
             updateLeaveDays();
-      } else if (leaveType === 'CPL') {
+      } else if (leaveTypeCode === 'CPL') {
             compOffFields.style.display = 'block';
             updateCompOffDays();
-      } else if (leaveType === 'MEL') {
+      } else if (leaveTypeCode === 'MEL') {
             maternityFields.style.display = 'block';
             updateMaternityDuration();
       }
