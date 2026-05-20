@@ -1,11 +1,53 @@
 // Leave Module JavaScript
 
+function showToast(message, type = 'info') {
+      const toast = document.createElement('div');
+      toast.className = `toast-notification toast-${type}`;
+      toast.textContent = message;
+      toast.style.cssText = `
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: ${type === 'error' ? '#ef4444' : type === 'success' ? '#10b981' : '#3b82f6'};
+            color: white;
+            padding: 14px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 9999;
+            max-width: 350px;
+            font-size: 14px;
+            animation: slideIn 0.3s ease-out;
+      `;
+      document.body.appendChild(toast);
+      setTimeout(() => {
+            toast.style.animation = 'slideOut 0.3s ease-out';
+            setTimeout(() => toast.remove(), 300);
+      }, 3000);
+}
+
+// Add CSS animations if not already present
+if (!document.getElementById('toast-styles')) {
+      const style = document.createElement('style');
+      style.id = 'toast-styles';
+      style.textContent = `
+            @keyframes slideIn {
+                  from { transform: translateX(400px); opacity: 0; }
+                  to { transform: translateX(0); opacity: 1; }
+            }
+            @keyframes slideOut {
+                  from { transform: translateX(0); opacity: 1; }
+                  to { transform: translateX(400px); opacity: 0; }
+            }
+      `;
+      document.head.appendChild(style);
+}
+
 function submitLeaveRequest() {
       var leaveTypeId = document.getElementById('leave_type').value;
       var leaveTypeOption = document.getElementById('leave_type').selectedOptions[0];
       var leaveTypeCode = leaveTypeOption ? leaveTypeOption.dataset.code : '';
       if (!leaveTypeId) {
-            alert('Please select a leave type.');
+            showToast('Please select a leave type.', 'error');
             return;
       }
 
@@ -23,13 +65,13 @@ function submitLeaveRequest() {
 
             if (['CSL', 'LOP', 'ADL'].includes(leaveTypeCode)) {
                   if (!fromDate || !toDate || !reason) {
-                        alert('Please fill all required fields.');
+                        showToast('Please fill all required fields.', 'error');
                         return;
                   }
             }
 
             if (!ciStaffEmail) {
-                  alert('Unable to determine current user email for API submission.');
+                  showToast('Unable to determine current user email for API submission.', 'error');
                   return;
             }
 
@@ -51,7 +93,7 @@ function submitLeaveRequest() {
                   var notes = document.getElementById('comp_off_notes').value;
 
                   if (!workedDate || !compOffDate || !notes) {
-                        alert('Please fill all required fields.');
+                        showToast('Please fill all required fields.', 'error');
                         return;
                   }
 
@@ -75,7 +117,7 @@ function submitLeaveRequest() {
                   var notes = document.getElementById('maternity_notes').value;
 
                   if (!deliveryDate || !startDate || !endDate || !alternateContact || !emergencyContact || !consignee || !handoverPlan || !notes) {
-                        alert('Please fill all required fields.');
+                        showToast('Please fill all required fields.', 'error');
                         return;
                   }
 
@@ -108,15 +150,15 @@ function submitLeaveRequest() {
             .then(response => response.json())
             .then(data => {
                   if (data.success || data.status) {
-                        alert('Leave request submitted successfully!');
+                        showToast('Leave request submitted successfully!', 'success');
                         closeForm();
                   } else {
-                        alert('Error: ' + (data.message || 'Unable to submit request'));
+                        showToast('Error: ' + (data.message || 'Unable to submit request'), 'error');
                   }
             })
             .catch(error => {
                   console.error('Error:', error);
-                  alert('An error occurred while submitting the request.');
+                  showToast('An error occurred while submitting the request.', 'error');
             });
             return;
       }
@@ -132,8 +174,7 @@ function submitLeaveRequest() {
             var notes = document.getElementById('comp_off_notes').value;
 
             if (!workedDate || !compOffDate || !notes) {
-                  alert('Please fill all required fields.');
-                  return;
+                        showToast('Please fill all required fields.', 'error');
             }
 
             formData.append('from_date', workedDate);
@@ -151,8 +192,7 @@ function submitLeaveRequest() {
             var notes = document.getElementById('maternity_notes').value;
 
             if (!deliveryDate || !startDate || !endDate || !alternateContact || !emergencyContact || !consignee || !handoverPlan || !notes) {
-                  alert('Please fill all required fields.');
-                  return;
+                        showToast('Please fill all required fields.', 'error');
             }
 
             formData.append('expected_delivery_date', deliveryDate);
@@ -167,7 +207,7 @@ function submitLeaveRequest() {
                   formData.append('medical_certificate', medicalCertificate);
             }
       } else {
-            alert('This leave type is not supported yet.');
+            showToast('This leave type is not supported yet.', 'error');
             return;
       }
 
@@ -178,15 +218,15 @@ function submitLeaveRequest() {
       .then(response => response.json())
       .then(data => {
             if (data.success) {
-                  alert('Leave request submitted successfully!');
+                  showToast('Leave request submitted successfully!', 'success');
                   closeForm();
             } else {
-                  alert('Error: ' + data.message);
+                  showToast('Error: ' + data.message, 'error');
             }
       })
       .catch(error => {
             console.error('Error:', error);
-            alert('An error occurred while submitting the request.');
+            showToast('An error occurred while submitting the request.', 'error');
       });
 }
 
@@ -305,41 +345,65 @@ function updateMaternityDuration() {
 }
 
 function submitRegularisationRequest() {
-      // Similar to above, implement for regularisation
-      var date = document.querySelector('#form-Regularisation input[type="date"]').value;
-      var shift = document.querySelector('#form-Regularisation select').value;
-      var punchIn = document.querySelector('#form-Regularisation input[type="time"]:nth-of-type(1)').value;
-      var punchOut = document.querySelector('#form-Regularisation input[type="time"]:nth-of-type(2)').value;
-      var reason = document.querySelector('#form-Regularisation textarea').value;
+      var dateInput = document.getElementById('reg_attendance_date');
+      var typeSelect = document.getElementById('reg_regularization_type');
+      var inTimeInput = document.getElementById('reg_requested_in_time');
+      var outTimeInput = document.getElementById('reg_requested_out_time');
+      var reasonInput = document.getElementById('reg_reason');
+      var attachmentInput = document.getElementById('reg_attachment');
 
-      if (!date || !shift || !punchIn || !punchOut || !reason) {
-            alert('Please fill all required fields.');
+      // Validate inputs exist
+      if (!dateInput || !typeSelect || !reasonInput) {
+            showToast('Form elements not found. Please reload the page.', 'error');
+            return;
+      }
+
+      var date = dateInput.value;
+      var type = typeSelect.value;
+      var inTime = inTimeInput ? inTimeInput.value : null;
+      var outTime = outTimeInput ? outTimeInput.value : null;
+      var reason = reasonInput.value;
+
+      if (!date || !type || !reason) {
+            showToast('Please fill all required fields.', 'error');
+            return;
+      }
+
+      if (!ciStaffEmail) {
+            showToast('Unable to determine current user email.', 'error');
             return;
       }
 
       var formData = new FormData();
-      formData.append('date', date);
-      formData.append('shift', shift);
-      formData.append('punch_in', punchIn);
-      formData.append('punch_out', punchOut);
+      formData.append('staff_email', ciStaffEmail);
+      formData.append('attendance_date', date);
+      formData.append('regularization_type', type);
+      if (inTime) formData.append('requested_in_time', inTime + ':00');
+      if (outTime) formData.append('requested_out_time', outTime + ':00');
       formData.append('reason', reason);
+      if (attachmentInput && attachmentInput.files.length > 0) {
+            formData.append('attachment', attachmentInput.files[0]);
+      }
 
-      fetch(base_url + 'admin/hr/submit_regularisation_request', {
+      fetch(laravelWebBase + 'regularization/apply-ci-web', {
             method: 'POST',
+            headers: {
+                  'X-Requested-With': 'XMLHttpRequest'
+            },
             body: formData
       })
       .then(response => response.json())
       .then(data => {
-            if (data.success) {
-                  alert('Regularisation request submitted successfully!');
+            if (data.status || data.success) {
+                  showToast('Regularisation request submitted successfully!', 'success');
                   closeForm();
             } else {
-                  alert('Error: ' + data.message);
+                  showToast('Error: ' + (data.message || 'Unable to submit request'), 'error');
             }
       })
       .catch(error => {
             console.error('Error:', error);
-            alert('An error occurred while submitting the request.');
+            showToast('An error occurred while submitting the request.', 'error');
       });
 }
 
@@ -350,7 +414,7 @@ function submitWorkFromHomeRequest() {
       var workDescription = document.querySelector('#form-Work From Home textarea').value;
 
       if (!fromDate || !toDate || !workDescription) {
-            alert('Please fill all required fields.');
+            showToast('Please fill all required fields.', 'error');
             return;
       }
 
@@ -366,15 +430,15 @@ function submitWorkFromHomeRequest() {
       .then(response => response.json())
       .then(data => {
             if (data.success) {
-                  alert('Work From Home request submitted successfully!');
+                  showToast('Work From Home request submitted successfully!', 'success');
                   closeForm();
             } else {
-                  alert('Error: ' + data.message);
+                  showToast('Error: ' + data.message, 'error');
             }
       })
       .catch(error => {
             console.error('Error:', error);
-            alert('An error occurred while submitting the request.');
+            showToast('An error occurred while submitting the request.', 'error');
       });
 }
 
@@ -386,7 +450,7 @@ function submitOnDutyRequest() {
       var location = document.querySelector('#form-On Duty input[type="text"]').value;
 
       if (!fromDate || !toDate || !purpose || !location) {
-            alert('Please fill all required fields.');
+            showToast('Please fill all required fields.', 'error');
             return;
       }
 
@@ -403,15 +467,15 @@ function submitOnDutyRequest() {
       .then(response => response.json())
       .then(data => {
             if (data.success) {
-                  alert('On Duty request submitted successfully!');
+                  showToast('On Duty request submitted successfully!', 'success');
                   closeForm();
             } else {
-                  alert('Error: ' + data.message);
+                  showToast('Error: ' + data.message, 'error');
             }
       })
       .catch(error => {
             console.error('Error:', error);
-            alert('An error occurred while submitting the request.');
+            showToast('An error occurred while submitting the request.', 'error');
       });
 }
 
@@ -422,7 +486,7 @@ function submitCompOffRequest() {
       var reason = document.querySelector('#form-Comp Off textarea').value;
 
       if (!workedDate || !compOffDate || !reason) {
-            alert('Please fill all required fields.');
+            showToast('Please fill all required fields.', 'error');
             return;
       }
 
@@ -438,15 +502,15 @@ function submitCompOffRequest() {
       .then(response => response.json())
       .then(data => {
             if (data.success) {
-                  alert('Comp Off request submitted successfully!');
+                  showToast('Comp Off request submitted successfully!', 'success');
                   closeForm();
             } else {
-                  alert('Error: ' + data.message);
+                  showToast('Error: ' + data.message, 'error');
             }
       })
       .catch(error => {
             console.error('Error:', error);
-            alert('An error occurred while submitting the request.');
+            showToast('An error occurred while submitting the request.', 'error');
       });
 }
 
@@ -457,7 +521,7 @@ function submitResignationRequest() {
       var reason = document.querySelector('#form-Resignation textarea').value;
 
       if (!noticePeriod || !lastWorkingDate || !reason) {
-            alert('Please fill all required fields.');
+            showToast('Please fill all required fields.', 'error');
             return;
       }
 
@@ -473,15 +537,15 @@ function submitResignationRequest() {
       .then(response => response.json())
       .then(data => {
             if (data.success) {
-                  alert('Resignation request submitted successfully!');
+                  showToast('Resignation request submitted successfully!', 'success');
                   closeForm();
             } else {
-                  alert('Error: ' + data.message);
+                  showToast('Error: ' + data.message, 'error');
             }
       })
       .catch(error => {
             console.error('Error:', error);
-            alert('An error occurred while submitting the request.');
+            showToast('An error occurred while submitting the request.', 'error');
       });
 }
 
@@ -494,7 +558,7 @@ function submitExpenseRequest() {
       var bill = document.querySelector('#form-Expense input[type="file"]').files[0];
 
       if (!expenseType || !amount || !date || !description) {
-            alert('Please fill all required fields.');
+            showToast('Please fill all required fields.', 'error');
             return;
       }
 
@@ -512,15 +576,15 @@ function submitExpenseRequest() {
       .then(response => response.json())
       .then(data => {
             if (data.success) {
-                  alert('Expense request submitted successfully!');
+                  showToast('Expense request submitted successfully!', 'success');
                   closeForm();
             } else {
-                  alert('Error: ' + data.message);
+                  showToast('Error: ' + data.message, 'error');
             }
       })
       .catch(error => {
             console.error('Error:', error);
-            alert('An error occurred while submitting the request.');
+            showToast('An error occurred while submitting the request.', 'error');
       });
 }
 
@@ -532,7 +596,7 @@ function submitRestrictedHolidayRequest() {
       var reason = document.querySelector('#form-Restricted Holiday textarea').value;
 
       if (!holiday || !fromDate || !toDate || !reason) {
-            alert('Please fill all required fields.');
+            showToast('Please fill all required fields.', 'error');
             return;
       }
 
@@ -549,15 +613,15 @@ function submitRestrictedHolidayRequest() {
       .then(response => response.json())
       .then(data => {
             if (data.success) {
-                  alert('Restricted Holiday request submitted successfully!');
+                  showToast('Restricted Holiday request submitted successfully!', 'success');
                   closeForm();
             } else {
-                  alert('Error: ' + data.message);
+                  showToast('Error: ' + data.message, 'error');
             }
       })
       .catch(error => {
             console.error('Error:', error);
-            alert('An error occurred while submitting the request.');
+            showToast('An error occurred while submitting the request.', 'error');
       });
 }
 
@@ -605,12 +669,12 @@ function submitShortLeaveRequest() {
       var diff = toMinutes - fromMinutes;
 
       if (diff <= 0) {
-            alert('End time must be after start time.');
+            showToast('End time must be after start time.', 'error');
             return;
       }
 
       if (diff > 30) {
-            alert('Short leave cannot exceed 30 minutes.');
+            showToast('Short leave cannot exceed 30 minutes.', 'error');
             return;
       }
 
@@ -628,14 +692,14 @@ function submitShortLeaveRequest() {
       .then(response => response.json())
       .then(data => {
             if (data.success) {
-                  alert('Short Leave request submitted successfully!');
+                  showToast('Short Leave request submitted successfully!', 'success');
                   closeForm();
             } else {
-                  alert('Error: ' + data.message);
+                  showToast('Error: ' + data.message, 'error');
             }
       })
       .catch(error => {
             console.error('Error:', error);
-            alert('An error occurred while submitting the request.');
+            showToast('An error occurred while submitting the request.', 'error');
       });
 }

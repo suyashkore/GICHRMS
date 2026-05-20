@@ -89,6 +89,68 @@ class LeaveController extends Controller
 		}
 	}
 
+	public function 													leaveBalanceFromCI(Request $request, $email = null)
+	{
+		try {
+			if ($request->route() && $request->route()->getName() === 'leave.ci-balance') {
+				if (!$this->isSameOriginWebRequest($request)) {
+					return response()->json([
+						'status' => false,
+						'message' => 'Invalid web request origin.',
+					], 403);
+				}
+			}
+
+			if (!$email) {
+				return response()->json([
+					'status' => false,
+					'message' => 'Email required.',
+					'data' => []
+				], 400);
+			}
+
+			$user = Staff::where('email', $email)->first();
+			if (!$user) {
+				return response()->json([
+					'status' => false,
+					'message' => 'Staff account not found.',
+					'data' => []
+				], 404);
+			}
+
+			$currentYear = date('Y');
+			$balances = HrmEmployeeLeaveBalance::with([
+				'leaveType:id,code,name'
+			])
+			->where('staff_id', $user->staffid)
+			->where('leave_year', $currentYear)
+			->get()
+			->map(function ($item) {
+				return [
+					'leave_type_id' => $item->leave_type_id,
+					'code' => $item->leaveType->code ?? null,
+					'name' => $item->leaveType->name ?? null,
+					'allocated' => $item->allocated,
+					'used' => $item->used,
+					'remaining' => $item->remaining,
+					'leave_year' => $item->leave_year,
+				];
+			});
+
+			return response()->json([
+				'status' => true,
+				'message' => 'Leave balance fetched successfully.',
+				'data' => $balances
+			], 200);
+		} catch (\Exception $e) {
+			return response()->json([
+				'status' => false,
+				'message' => 'Something went wrong.',
+				'error' => $e->getMessage()
+			], 500);
+		}
+	}
+
 	public function leaveHistory(Request $request) {
 		try {
 			$user = $request->user();
@@ -187,8 +249,13 @@ class LeaveController extends Controller
 		$origin = $request->headers->get('origin');
 		$requestedWith = $request->header('X-Requested-With');
 
-		if (!$origin || strcasecmp($requestedWith, 'XMLHttpRequest') !== 0) {
+		if (strcasecmp($requestedWith, 'XMLHttpRequest') !== 0) {
 			return false;
+		}
+
+		if (!$origin) {
+			// Some browsers omit Origin for same-origin GET requests.
+			return true;
 		}
 
 		$originHost = parse_url($origin, PHP_URL_HOST);

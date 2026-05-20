@@ -76,28 +76,29 @@
 
 <!-- Regularisation -->
 <div id="form-Regularisation" class="rform-body" style="display:none;">
-      <div class="form-group"><label>Regularisation Date</label><input type="date" class="form-control form-control-card" value="<?php echo date('Y-m-d'); ?>" /></div>
+      <div class="form-group"><label>Regularisation Date</label><input id="reg_attendance_date" type="date" class="form-control form-control-card" value="<?php echo date('Y-m-d'); ?>" /></div>
       <div class="form-group"><label>Missing Punch Type</label>
-            <select class="form-control form-control-card">
+            <select id="reg_regularization_type" class="form-control form-control-card">
                   <option value="">Select Type</option>
-                  <option>Biometric Not Working</option>
-                  <option>App Not Working</option>
-                  <option>On Official Work</option>
-                  <option>Network Issue</option>
-                  <option>Worked on Holiday/Weekoff</option>
-                  <option>Other</option>
+                  <option value="biometric_issue">Biometric Not Working</option>
+                  <option value="forgot_punch">Forgot to Punch</option>
+                  <option value="app_issue">App Not Working</option>
+                  <option value="official_work">On Official Work</option>
+                  <option value="network_issue">Network Issue</option>
+                  <option value="weekoff_holiday">Worked on Holiday/Weekoff</option>
+                  <option value="other">Other</option>
             </select>
       </div>
       <div class="fg2">
-            <div class="form-group"><label>From Time</label><input type="time" class="form-control form-control-card" /></div>
-            <div class="form-group"><label>To Time</label><input type="time" class="form-control form-control-card" /></div>
+            <div class="form-group"><label>From Time</label><input id="reg_requested_in_time" type="time" class="form-control form-control-card" /></div>
+            <div class="form-group"><label>To Time</label><input id="reg_requested_out_time" type="time" class="form-control form-control-card" /></div>
       </div>
-      <div class="form-group"><label>Reason</label><textarea class="form-control form-control-card" rows="3" placeholder="Reason for regularisation"></textarea></div>
+      <div class="form-group"><label>Reason</label><textarea id="reg_reason" class="form-control form-control-card" rows="3" placeholder="Reason for regularisation"></textarea></div>
       <div class="form-group file-upload-card">
             <label>Supporting Document</label>
             <div class="file-upload-button">
                   <span>+ Add File</span>
-                  <input type="file" class="form-control" />
+                  <input id="reg_attachment" type="file" class="form-control" />
             </div>
       </div>
       <div class="rform-actions">
